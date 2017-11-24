@@ -2,8 +2,14 @@
     - KIINSTYLE CSS FRAMEWORK
     - AUTHOR: JURI KIIN
     - CONTACT: HTTP://JURIKIIN.COM
-    - LAST UPDATED: 9/20/2017
+    - LAST UPDATED: 9/21/2017
 */
+
+/* ------------ Body (body-name) ------------ */
+.body-clear{
+    margin:0;
+    padding:0;
+}
 
 /* ------------ Text Color (colorName) ------------ */
 .white{
@@ -18,6 +24,26 @@
 .slate{
     color: #5D675B;
 }
+.navy{
+    color:#2A1E5C;
+}
+
+/* ------------ Background Color (bg-colorName) ------------ */
+.bg-white{
+    background-color:white;
+}
+.bg-black{
+    background-color:black;
+}
+.bg-red{
+    background-color:red;
+}
+.bg-slate{
+    background-color: #5D675B;
+}
+.bg-navy{
+    background-color:#2A1E5C;
+}
 
 /* ------------ Footers (footer-) ------------*/
 .footer{
@@ -30,7 +56,7 @@
 .footer-link{
     color:black;
 }
-/* ------------ Lists (list-) ------------*/
+/* ------------ Lists (list-type) ------------*/
 .list-clear{
     list-style-type: none;
     margin: 0;
@@ -69,8 +95,30 @@
     text-align: center;
     width:100%;
 }
+.align-left{
+    text-align:left;
+}
+.align-right{
+    text-align:right;
+}
 
 /* ------------ MARGINS (margin-(sides)-# ------------*/
+/* 0 */
+.margin-0{
+    margin:0;
+}
+.margin-top-0{
+    margin-top:0;
+}
+.margin-left-0{
+    margin-left:0;
+}
+.margin-bottom-0{
+    margin-bottom: 0;
+}
+.margin-right-0{
+    margin-right:0;
+}
 /* 5% */
 .margin-5{
     margin:5%;
@@ -184,6 +232,10 @@
     margin-right:100%;
 }
 /* ------------ PADDING (pad-(sides)-# ------------*/
+.pad-0{
+    padding:0;
+}
+
 
 /* 5% */
 .pad-5{
@@ -344,4 +396,87 @@
 }
 .col-12{
     width:8%;
+}
+/* ------------ Height (height-#) ------------*/
+.height-0{
+    height:0;
+}
+.height-5{
+    height:5px;
+}
+.height-25{
+    height:25px;
+}
+.height-50{
+    height:50px;
+}
+.height-75{
+    height:75px;
+}
+.height-100{
+    height:100px;
+}
+.height-150{
+    height: 150px;
+}
+
+/* ------------ Line Height (l-height-#) ------------*/
+.l-height-0{
+    line-height:0;
+}
+.l-height-5{
+    line-height:5px;
+}
+.l-height-25{
+    line-height:25px;
+}
+.l-height-50{
+    line-height:50px;
+}
+.l-height-75{
+    line-height:75px;
+}
+.l-height-100{
+    line-height:100px;
+}
+.l-height-150{
+    line-height: 150px;
+}
+
+/* ------------ Display (d-type)------------*/
+.d-inline{
+    display: inline;
+}
+.d-block{
+    display: block;
+}
+.d--inline-block{
+    display: inline-block
+}
+
+/* ------------ Floats (f-direction) ------------*/
+.f-left{
+    float: left;
+}
+.f-right{
+    float:right;
+}
+/* ----------- Links ------------*/
+.link{
+    color:black;
+}
+.link-any{
+    color:inherit;
+    text-decoration: underline;
+}
+.link-clear{
+    color:inherit;
+    text-decoration: none;
+}
+.link-hover:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.link-hover-subtle:hover{
+    cursor: pointer;
 }

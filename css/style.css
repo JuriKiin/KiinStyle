@@ -1,0 +1,18 @@
+/* ------------ Fonts (font-type) ------------ */
+.font-header{
+    font-family: 'Open Sans', sans-serif;
+}
+.font-text{
+    font-family: 'Raleway', sans-serif;
+}
+
+.title{
+    line-height: 100px;
+}
+.footer{
+    background-color:#EE4266;
+    color:white;
+}
+.logoImg{
+padding: 15px 0;
+}
