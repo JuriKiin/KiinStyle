@@ -232,6 +232,10 @@
     margin-right:100%;
 }
 /* ------------ PADDING (pad-(sides)-# ------------*/
+.pad-0{
+    padding:0;
+}
+
 
 /* 5% */
 .pad-5{
@@ -397,7 +401,7 @@
 .height-0{
     height:0;
 }
-.height-10{
+.height-5{
     height:5px;
 }
 .height-25{
@@ -414,6 +418,29 @@
 }
 .height-150{
     height: 150px;
+}
+
+/* ------------ Line Height (l-height-#) ------------*/
+.l-height-0{
+    line-height:0;
+}
+.l-height-5{
+    line-height:5px;
+}
+.l-height-25{
+    line-height:25px;
+}
+.l-height-50{
+    line-height:50px;
+}
+.l-height-75{
+    line-height:75px;
+}
+.l-height-100{
+    line-height:100px;
+}
+.l-height-150{
+    line-height: 150px;
 }
 
 /* ------------ Display (d-type)------------*/
