@@ -48,8 +48,9 @@
 /* ------------ Footers (footer-) ------------*/
 .footer{
     text-align: center;
-    width:100%;
-    position: absolute;
+    position: fixed;
+    left:0;
+    right:0;
     bottom:0;
     background-color:gray;
 }
@@ -479,4 +480,41 @@
 }
 .link-hover-subtle:hover{
     cursor: pointer;
+}
+
+/* ----------- Text Decoration ------------*/
+.underline{
+    text-decoration: underline;
+}
+
+/* ----------- Overflow ------------*/
+.o-scroll{
+    overflow: scroll;
+}
+.o-hidden{
+    overflow: hidden;
+}
+
+/* ----------- Position ------------*/
+.absolute{
+    position:absolute;
+}
+.fixed{
+    position:fixed;
+}
+
+/* ----------- Button ------------*/
+.button{
+    width:25%;
+    margin-left:37.5%;
+    margin-right:37.5%;
+    background-color: transparent;
+    border: 1px solid #3CBBB1;
+    color: #3CBBB1;
+    transition:all .25s ease-in-out;
+}
+.button:hover{
+    background-color: #3CBBB1;
+    color:white;
+    cursor:pointer;
 }
