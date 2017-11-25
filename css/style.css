@@ -16,3 +16,10 @@
 .logoImg{
 padding: 15px 0;
 }
+#body{
+    margin: 0 10%;
+}
+.codeFigure{
+    background-color: #d9dce0;
+    line-height: 50px;
+}
