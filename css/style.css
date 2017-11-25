@@ -22,4 +22,13 @@ padding: 15px 0;
 .codeFigure{
     background-color: #d9dce0;
     line-height: 50px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 750px) {
+.codeFigure{
+    line-height: 15pt;
+    font-size: 10pt;
+}
+
 }

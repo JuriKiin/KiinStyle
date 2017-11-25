@@ -45,6 +45,7 @@
     background-color:#2A1E5C;
 }
 
+/* ------------ Header (header-) ------------*/
 /* ------------ Footers (footer-) ------------*/
 .footer{
     text-align: center;
@@ -237,7 +238,6 @@
     padding:0;
 }
 
-
 /* 5% */
 .pad-5{
     padding:5%;
@@ -370,6 +370,22 @@
     font-size: 8px;
 }
 
+@media screen and (max-width: 750px) {
+.font-xxl{
+    font-size: 50px;
+}
+.font-xl{
+    font-size:40px;
+}
+.font-lg{
+    font-size: 25px;
+}
+.font-md{
+    font-size: 15px;
+}
+
+}
+
 /* ------------ Columns ------------*/
 .col{
     width:100%;
@@ -444,6 +460,13 @@
     line-height: 150px;
 }
 
+@media screen and (max-width: 750px) {
+.l-height-100{
+    line-height: 50px;
+}
+
+}
+
 /* ------------ Display (d-type)------------*/
 .d-inline{
     display: inline;
@@ -494,6 +517,12 @@
 .o-hidden{
     overflow: hidden;
 }
+.o-auto{
+    overflow:auto;
+}
+.o-x{
+    overflow-x: scroll;
+}
 
 /* ----------- Position ------------*/
 .absolute{
@@ -517,4 +546,18 @@
     background-color: #3CBBB1;
     color:white;
     cursor:pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .button{
+        width:50%;
+        margin-left:25%;
+        margin-right:25%;
+    }
+}
+
+
+/* ------------ VH (vh-) ------------*/
+.vh-full{
+    height: 100vh;
 }
