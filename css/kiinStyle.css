@@ -1,9 +1,13 @@
 /*
     - KIINSTYLE CSS FRAMEWORK
     - AUTHOR: JURI KIIN
-    - CONTACT: HTTP://JURIKIIN.COM
-    - LAST UPDATED: 9/21/2017
+    - CONTACT: me@jurikiin.com
+    - LAST UPDATED: 6/27/2018
 */
+
+/* IMPORTING FONTS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 /* ------------ Body (body-name) ------------ */
 .body-clear{
@@ -12,37 +16,53 @@
 }
 
 /* ------------ Text Color (colorName) ------------ */
-.white{
-    color:white;
+.grass{
+    color: #20c544;
 }
-.black{
-    color:black;
+.water{
+    color: #206dc5;
 }
-.red{
-    color:red;
+.fire{
+    color: #c53320;
 }
-.slate{
+.rock{
     color: #5D675B;
 }
-.navy{
+.silk{
     color:#2A1E5C;
+}
+.coal{
+    color:black;
+}
+.snow{
+    color:white;
 }
 
 /* ------------ Background Color (bg-colorName) ------------ */
-.bg-white{
-    background-color:white;
+.bg-grass{
+    background-color: #20c544;
 }
-.bg-black{
-    background-color:black;
+.bg-water{
+    background-color: #206dc5;
 }
-.bg-red{
-    background-color:red;
+.bg-fire{
+    background-color: #c53320;
 }
-.bg-slate{
+.bg-rock{
     background-color: #5D675B;
 }
-.bg-navy{
+.bg-silk{
     background-color:#2A1E5C;
+}
+.bg-coal{
+    background-color:black;
+}
+.bg-snow{
+    background-color:white;
+}
+.bg-water-gradient{
+    background: rgb(42,30,92);
+    background: linear-gradient(90deg, rgba(42,30,92,1) 40%, rgba(32,109,197,1) 100%);
 }
 
 /* ------------ Header (header-) ------------*/
@@ -53,7 +73,6 @@
     left:0;
     right:0;
     bottom:0;
-    background-color:gray;
 }
 .footer-link{
     color:black;
@@ -95,7 +114,6 @@
 /* ------------ Alignment (align-) ------------*/
 .align-center{
     text-align: center;
-    width:100%;
 }
 .align-left{
     text-align:left;
@@ -233,9 +251,57 @@
 .margin-right-100{
     margin-right:100%;
 }
+/* 10px */
+.margin-10p{
+    margin:10px;
+}
+.margin-top-10p{
+    margin-top:10px;
+}
+.margin-left-10p{
+    margin-left:10px;
+}
+.margin-bottom-10p{
+    margin-bottom: 10px;
+}
+.margin-right-10p{
+    margin-right:10px;
+}
 /* ------------ PADDING (pad-(sides)-# ------------*/
 .pad-0{
     padding:0;
+}
+/* 10px */
+.pad-10p{
+    padding:10px;
+}
+.pad-top-10p{
+    padding-top:10px;
+}
+.pad-left-10p{
+    padding-left:10px;
+}
+.pad-bottom-10p{
+    padding-bottom: 10px;
+}
+.pad-right-10p{
+    padding-right:10px;
+}
+/* 20px */
+.pad-20p{
+    padding:20px;
+}
+.pad-top-20p{
+    padding-top:20px;
+}
+.pad-left-20p{
+    padding-left:20px;
+}
+.pad-bottom-20p{
+    padding-bottom:20px;
+}
+.pad-right-20p{
+    padding-right:20px;
 }
 
 /* 5% */
@@ -370,6 +436,17 @@
     font-size: 8px;
 }
 
+/* ------------ Font Types (font-nm)------------*/
+.font-header{
+    font-family: 'Open Sans', sans-serif;
+}
+.font-text{
+    font-family: 'Raleway', sans-serif;
+}
+.font-default{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 @media screen and (max-width: 750px) {
 .font-xxl{
     font-size: 50px;
@@ -386,8 +463,13 @@
 
 }
 
-/* ------------ Columns ------------*/
-.col{
+/* ------------ Columns  (CURRENTLY UNSUPPORTED) ------------*/
+[class*='col-'] {
+    float: left; 
+    min-height: 1px;
+}
+
+.col-1{
     width:100%;
 }
 .col-2{
@@ -400,7 +482,7 @@
     width:25%;
 }
 .col-5{
-    width:20%
+    width:20%;
 }
 .col-6{
     width:16.66%;
@@ -421,6 +503,12 @@
 .height-5{
     height:5px;
 }
+.height-10{
+    height:10px;
+}
+.height-20{
+    height:20px;
+}
 .height-25{
     height:25px;
 }
@@ -436,6 +524,9 @@
 .height-150{
     height: 150px;
 }
+.height-auto{
+    height:auto;
+}
 
 /* ------------ Line Height (l-height-#) ------------*/
 .l-height-0{
@@ -443,6 +534,12 @@
 }
 .l-height-5{
     line-height:5px;
+}
+.l-height-10{
+    line-height:10px;
+}
+.l-height-20{
+    line-height:20px;
 }
 .l-height-25{
     line-height:25px;
@@ -535,6 +632,7 @@
 /* ----------- Button ------------*/
 .button{
     width:25%;
+    height:75px;
     margin-left:37.5%;
     margin-right:37.5%;
     background-color: transparent;
@@ -546,7 +644,30 @@
     background-color: #3CBBB1;
     color:white;
     cursor:pointer;
+    border-radius: 10px;
 }
+
+
+/* ------------ VH (vh-) ------------*/
+.vh-full{
+    height: 100vh;
+}
+
+/* ------------ HR (break-) ------------*/
+.break{
+    margin: 5% 10%;
+    border: 1px solid #5D675B;
+}
+
+/* ------------ Code (For displaying code) ------------*/
+.code{
+    background-color: #d9dce0;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+
+/* ------------ MEDIA QUERIES ------------ */
 
 @media screen and (max-width: 750px) {
     .button{
@@ -554,10 +675,8 @@
         margin-left:25%;
         margin-right:25%;
     }
-}
-
-
-/* ------------ VH (vh-) ------------*/
-.vh-full{
-    height: 100vh;
+    .code{
+        line-height: 15pt;
+        font-size: 10pt;
+    }
 }
