@@ -68,8 +68,8 @@
 /* ------------ Header (header-) ------------*/
 /* ------------ Footers (footer-) ------------*/
 .footer{
+    margin-top:2%;
     text-align: center;
-    position: fixed;
     left:0;
     right:0;
     bottom:0;
