@@ -6,8 +6,7 @@
     <meta name="author" content="JuriKiin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>kiinStyles | Documentation</title>
-    <link rel="stylesheet" href="css/kiinStyle.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://jurikiin.com/KiinStyles/css/kiinStyle.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -16,243 +15,258 @@
 </head>
 <body class='body-clear coal bg-water-gradient'>
     <div class='align-right l-height-100 pad-right-5'>
-        <h1 class=' margin-0 snow font-header align-left pad-left-5 margin-right-25 font-lg f-left link-hover-subtle'><a href='index.html' class='link-clear'><img src='media/kiinStyle.png' class='height-75 pad-20p'></a></h1>
-        <span class='align-right'>
-            <h1 class=' margin-0 snow font-header align-right pad-left-5 font-md d-inline link-hover'><a class='link-clear snow' href='index.html'>Home</a></h1>
-        </span>
+        <h1 class='margin-0 snow font-header align-left pad-left-5 margin-right-25 font-lg f-left link-hover-subtle'><a href='index.html' class='link-clear logo'><img src='media/kiinStyle.png' alt='logo' class='height-75 pad-20p'></a></h1>
+        <h1 class='margin-0 snow font-header align-right pad-left-5 font-md d-inline link-hover'><a class='link-clear snow' href='index.html'>Home</a></h1>
     </div><br>
 
+    <div class='fixed left-0 item-10 bg-snow coal font-header' style="box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <ul class='list-clear pad-left-10 l-height-50 font-md o-auto height-triquart'>
+            <li><a class='link-hover coal' href='#color'>Color</a></li>
+            <li><a class='link-hover coal' href='#width'>Width</a></li>
+            <li><a class='link-hover coal' href='#height'>Height</a></li>
+            <li><a class='link-hover coal' href='#alignment'>Alignment</a></li>
+            <li><a class='link-hover coal' href='#margin'>Margin</a></li>
+            <li><a class='link-hover coal' href='#padding'>Padding</a></li>
+            <li><a class='link-hover coal' href='#fontSize'>Font Size</a></li>
+            <li><a class='link-hover coal' href='#fontType'>Font Type</a></li>
+            <li><a class='link-hover coal' href='#lineHeight'>Line Height</a></li>
+            <li><a class='link-hover coal' href='#display'>Display</a></li>
+            <li><a class='link-hover coal' href='#float'>Float</a></li>
+            <li><a class='link-hover coal' href='#link'>Links</a></li>
+        </ul>
+    </div>
+
+    <div class='bg-snow align-center margin-left-10 margin-right-10'> 
     <!-- COLOR-->
-    <div class='bg-snow align-center margin-left-10 margin-right-10'>
-        <div id='doc-color' class='pad-left-5 align-left font-default pad-top-10p'>
-            <p class='align-left font-lg font-header slate'>Color.</p>
-            <p class='align-left'>Below are the default text colors.</p>
-            <ul class='list-clear align-left font-text l-height-25'>
-                <li class='grass'>Grass <span class='bg-grass margin-left-5'>Color</span></li>
-                <li class='water'>Water <span class='bg-water margin-left-5'>Color</span></li>
-                <li class='rock'>Rock <span class='bg-rock margin-left-5'>Color</span></li>
-                <li class='fire'>Fire <span class='bg-fire margin-left-5'>Color</span></li>
-                <li class='silk'>Silk <span class='bg-silk margin-left-5'>Color</span></li>
-                <li class='coal'>Snow <span class='bg-snow margin-left-5'>(White)</span></li>
-                <li class='coal'>Coal <span class='bg-coal margin-left-5'>Color</span></li>
-            </ul>
-            <p class='font-md'>To set text color using these primary colors:</p>
-            <h2>class='COLOR'</h2>
-            <h4>class='grass'</h4>
-            <p class='font-md'>To set background color using these primary colors:</p>
-            <h2>class='bg-COLOR'</h2>
-            <h4>class='bg-grass'</h4>
+    <div id='color' class='pad-left-5 align-left font-default pad-top-10p'>
+        <p class='align-left font-lg font-header slate'>Color.</p>
+        <p class='align-left'>Below are the default text colors.</p>
+        <ul class='list-clear align-left font-text l-height-25'>
+            <li class='grass'>Grass <span class='bg-grass margin-left-5'>Color</span></li>
+            <li class='water'>Water <span class='bg-water margin-left-5'>Color</span></li>
+            <li class='rock'>Rock <span class='bg-rock margin-left-5'>Color</span></li>
+            <li class='fire'>Fire <span class='bg-fire margin-left-5'>Color</span></li>
+            <li class='silk'>Silk <span class='bg-silk margin-left-5'>Color</span></li>
+            <li class='coal'>Snow <span class='bg-snow margin-left-5'>(White)</span></li>
+            <li class='coal'>Coal <span class='bg-coal margin-left-5'>Color</span></li>
+        </ul>
+        <p class='font-md'>To set text color using these primary colors:</p>
+        <h2>class='COLOR'</h2>
+        <h4>class='grass'</h4>
+        <p class='font-md'>To set background color using these primary colors:</p>
+        <h2>class='bg-COLOR'</h2>
+        <h4>class='bg-grass'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- WIDTH-->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='width'>
+        <p class='align-left font-lg font-header slate'>Width.</p>
+        <p class='align-left'>Width is used to set the width of an element.</p>
+        <ul class='list-clear align-left font-text l-height-25'>
+            <li class='item-auto bg-rock snow font-md align-center margin-top-10p'>auto</li>
+            <li class='item-10 bg-rock snow font-md align-center margin-top-10p'>10%</li>
+            <li class='item-20 bg-rock snow font-md align-center margin-top-10p'>20%</li>
+            <li class='item-25 bg-rock snow font-md align-center margin-top-10p'>25%</li>
+            <li class='item-50 bg-rock snow font-md align-center margin-top-10p'>50%</li>
+            <li class='item-75 bg-rock snow font-md align-center margin-top-10p'>75%</li>
+            <li class='item-100 bg-rock snow font-md align-center margin-top-10p'>100%</li>
+        </ul>
+        <p class='font-md'>To set the width of an element:</p>
+        <h2>class='item-NUMBER'</h2>
+        <h4>class='item-50'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- HEIGHT -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='height'>
+        <p class='align-left font-lg font-header slate'>Height.</p>
+        <p class='align-left'>Height controls the vertical height of an element.</p>
+        <ul class='list-clear align-center font-text l-height-25'>
+            <li class='item-50 snow bg-fire font-md align-center height-0 l-height-50 margin-10p'></li>
+            <li class='item-50 snow bg-fire font-md align-center height-5 l-height-50 margin-10p'></li>
+            <li class='item-50 snow bg-fire font-md align-center height-10 l-height-50 margin-10p'></li>
+            <li class='item-50 snow bg-fire font-md align-center height-20 l-height-50 margin-10p'></li>
+            <li class='item-50 snow bg-fire font-md align-center height-25 l-height-50 margin-10p'></li>
+            <li class='item-50 snow bg-fire font-md align-center height-50 l-height-50 margin-10p'></li>
+            <li class='item-50 snow bg-fire font-md align-center height-75 l-height-50 margin-10p'></li>
+            <li class='item-50 snow bg-fire font-md align-center height-100 l-height-50 margin-10p'></li>
+            <li class='item-50 snow bg-fire font-md align-center height-150 l-height-50 margin-10p'></li>
+            <li class='item-50 snow bg-fire font-md align-center height-auto l-height-50 margin-10p'></li>
+        </ul>
+        <p>Height exists in the following heights: 0px, 5px, 10px, 20px, 25px, 50px, 75px, 100px, 150px, auto</p>
+        <p class='font-md'>To set the height of an element:</p>
+        <h2>class='height-NUMBER'</h2>
+        <h4>class='height-50'</h4>
+    </div>   
+
+    <hr class='break'>
+
+    <!-- ALIGNMENT -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='alignment'>
+        <p class='align-left font-lg font-header slate'>Alignment.</p>
+        <p class='align-left'>Alignment is used to align an item left, right, or center.</p>
+        <ul class='list-clear align-left font-text l-height-25'>
+            <li class='item-50 bg-water snow font-md align-center margin-top-10p'>Center</li>
+            <li class='item-50 bg-water snow font-md align-left margin-top-10p'>Left</li>
+            <li class='item-50 bg-water snow font-md align-right margin-top-10p'>Right</li>
+        </ul>
+        <p class='font-md'>To set the alignment of an element:</p>
+        <h2>class='align-DIRECTION'</h2>
+        <h4>class='align-center'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- MARGIN -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='margin'>
+        <p class='align-left font-lg font-header slate'>Margin.</p>
+        <p class='align-left'>Margins are used to create space around an element.</p>
+        <ul class='list-clear align-center font-text l-height-25'>
+            <li class='item-50 bg-grass snow font-md align-center margin-10p'>All</li>
+            <li class='item-50 bg-grass snow font-md align-center margin-left-10p'>Left</li>
+            <li class='item-50 bg-grass snow font-md align-center margin-right-10p'>Right</li>
+            <li class='item-50 bg-grass snow font-md align-center margin-top-10p'>Top</li>
+            <li class='item-50 bg-grass snow font-md align-center margin-bottom-10p'>Bottom</li>
+        </ul>
+        <p>Margins exist in all directions in the following formats: 0, 10px (10p), 5%, 10%, 20%, 25%, 50%, 75%, 100%</p>
+        <p class='font-md'>To set the margins of an element:</p>
+        <h2>class='margin-DIRECTION-NUMBER'</h2>
+        <h4>class='margin-top-50'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- PADDING -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='padding'>
+        <p class='align-left font-lg font-header slate'>Padding.</p>
+        <p class='align-left'>Padding is used to generate space around an element.</p>
+        <ul class='list-clear align-center font-text l-height-25'>
+            <li class='item-50 bg-fire snow font-md align-center pad-10p margin-10p'>All</li>
+            <li class='item-50 bg-fire snow font-md align-center pad-left-10p margin-10p'>Left</li>
+            <li class='item-50 bg-fire snow font-md align-center pad-right-10p margin-10p'>Right</li>
+            <li class='item-50 bg-fire snow font-md align-center pad-top-10p margin-10p'>Top</li>
+            <li class='item-50 bg-fire snow font-md align-center pad-bottom-10p margin-10p'>Bottom</li>
+        </ul>
+        <p>Padding exists in all directions in the following formats: 0, 10px (10p), 20px (20p), 5%, 10%, 20%, 25%, 50%, 75%, 100%</p>
+        <p class='font-md'>To set the padding of an element:</p>
+        <h2>class='pad-DIRECTION-NUMBER'</h2>
+        <h4>class='pad-top-50'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- FONT SIZES -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='fontSize'>
+        <p class='align-left font-lg font-header slate'>Font Size.</p>
+        <p class='align-left'>Font size controls the size of an element.</p>
+        <ul class='list-clear align-center font-text l-height-25'>
+            <li class='item-20 rock font-xs align-center l-height-10'>sx</li>
+            <li class='item-20 rock font-sm align-center l-height-20'>sm</li>
+            <li class='item-20 rock font-md align-center l-height-50'>md</li>
+            <li class='item-20 rock font-lg align-center l-height-50'>lg</li>
+            <li class='item-20 rock font-xl align-center l-height-75'>xl</li>
+            <li class='item-20 rock font-xxl align-center l-height-100'>xxl</li>
+        </ul>
+        <p class='font-md'>To set the font size of an element:</p>
+        <h2>class='font-SIZE'</h2>
+        <h4>class='font-lg'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- FONT TYPES -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='fontType'>
+        <p class='align-left font-lg font-header slate'>Font Type.</p>
+        <p class='align-left'>Font size controls the size of an element.</p>
+        <ul class='list-clear align-center font-text l-height-25'>
+            <li class='item-50 rock font-lg font-header align-left l-height-100 margin-left-5'>Header</li>
+            <li class='item-20 rock font-md font-text align-left l-height-75 margin-left-5'>Text</li>
+            <li class='item-20 rock font-md font-default align-left l-height-75 margin-left-5'>Default</li>
+        </ul>
+        <p class='font-md'>To set the font type of an element:</p>
+        <h2>class='font-NAME'</h2>
+        <h4>class='font-header'</h4>
+    </div>
+
+    <!-- <hr class='break'>
+
+        COLUMNS
+    <div class='align-left font-default margin-left-5'>
+        <p class='align-left font-lg font-header slate'>Columns.</p>
+        <p class='align-left'>Columns help layout elements horizontally on the page.</p>
+        <div class='align-center item-50 d-block'>
+            <div class='col-1 align-center height-50 l-height-50 snow bg-silk'>100%</div>
+            <div class='col-2 align-center height-50 l-height-50 snow bg-grass'>50%</div><div class='col-2 align-center height-50 l-height-50 snow bg-grass'>50%</div>
+            <div class='col-3 align-center height-50 l-height-50 snow bg-fire'>33.3%</div><div class='col-3 align-center height-50 l-height-50 snow bg-fire'>33.3%</div><div class='col-3 align-center height-50 l-height-50 snow bg-fire'>33.3%</div>
         </div>
 
-        <hr class='break'>
+        <p>To set the font type of an element:</p>
+        <h2>class='font-NAME'</h2>
+        <h4>class='font-header'</h4>
+    </div> -->
 
-        <!-- WIDTH-->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='align-left font-lg font-header slate'>Width.</p>
-            <p class='align-left'>Width is used to set the width of an element.</p>
-            <ul class='list-clear align-left font-text l-height-25'>
-                <li class='item-auto bg-rock snow font-md align-center margin-top-10p'>auto</li>
-                <li class='item-10 bg-rock snow font-md align-center margin-top-10p'>10%</li>
-                <li class='item-20 bg-rock snow font-md align-center margin-top-10p'>20%</li>
-                <li class='item-25 bg-rock snow font-md align-center margin-top-10p'>25%</li>
-                <li class='item-50 bg-rock snow font-md align-center margin-top-10p'>50%</li>
-                <li class='item-75 bg-rock snow font-md align-center margin-top-10p'>75%</li>
-                <li class='item-100 bg-rock snow font-md align-center margin-top-10p'>100%</li>
-            </ul>
-            <p class='font-md'>To set the width of an element:</p>
-            <h2>class='item-NUMBER'</h2>
-            <h4>class='item-50'</h4>
-        </div>
+    <hr class='break'>
 
-        <hr class='break'>
+    <!-- LINE HEIGHT -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='lineHeight'>
+        <p class='align-left font-lg font-header slate'>Line Height.</p>
+        <p class='align-left'>Line Height controls the height of a text element.</p>
+        <ul class='list-clear align-center font-text l-height-25 item-20 rock font-md align-center'>
+            <li class='l-height-0'>0px</li>
+            <li class='l-height-5'>5px</li>
+            <li class='l-height-10'>10px</li>
+            <li class='l-height-20'>20px</li>
+            <li class='l-height-25'>25px</li>
+            <li class='l-height-50'>50px</li>
+            <li class='l-height-75'>75px</li>
+            <li class='l-height-100'>100px</li>
+            <li class='l-height-150'>150px</li>
+        </ul>
+        <p>Line Height exists in the following sizes: 0px, 5px, 10px, 20px, 25px, 50px, 75px, 100px, 150px</p>
+        <p class='font-md'>To set the line height of an element:</p>
+        <h2>class='l-height-NUMBER'</h2>
+        <h4>class='l-height-50'</h4>
+    </div>
 
-        <!-- HEIGHT -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='align-left font-lg font-header slate'>Height.</p>
-            <p class='align-left'>Height controls the vertical height of an element.</p>
-            <ul class='list-clear align-center font-text l-height-25'>
-                <li class='item-50 snow bg-fire font-md align-center height-0 l-height-50 margin-10p'></li>
-                <li class='item-50 snow bg-fire font-md align-center height-5 l-height-50 margin-10p'></li>
-                <li class='item-50 snow bg-fire font-md align-center height-10 l-height-50 margin-10p'></li>
-                <li class='item-50 snow bg-fire font-md align-center height-20 l-height-50 margin-10p'></li>
-                <li class='item-50 snow bg-fire font-md align-center height-25 l-height-50 margin-10p'></li>
-                <li class='item-50 snow bg-fire font-md align-center height-50 l-height-50 margin-10p'></li>
-                <li class='item-50 snow bg-fire font-md align-center height-75 l-height-50 margin-10p'></li>
-                <li class='item-50 snow bg-fire font-md align-center height-100 l-height-50 margin-10p'></li>
-                <li class='item-50 snow bg-fire font-md align-center height-150 l-height-50 margin-10p'></li>
-                <li class='item-50 snow bg-fire font-md align-center height-auto l-height-50 margin-10p'></li>
-            </ul>
-            <p>Height exists in the following heights: 0px, 5px, 10px, 20px, 25px, 50px, 75px, 100px, 150px, auto</p>
-            <p class='font-md'>To set the height of an element:</p>
-            <h2>class='height-NUMBER'</h2>
-            <h4>class='height-50'</h4>
-        </div>   
+    <hr class='break'>
 
-        <hr class='break'>
+    <!-- DISPLAY -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='display'>
+        <p class='font-lg font-header slate'>Display.</p>
+        <p>Display effects the rendering box of the element.</p>
+        <ul class='list-clear font-text font-md l-height-25 item-50 snow bg-grass align-center'>
+            <li class='d-inline'>Inline</li>
+            <li class='d-block'>Block</li>
+            <li class='d-inline-block'>Inline-Block</li>
+        </ul>
+        <p>Display also offers d-none, which sets the display of an element to none.</p>
+        <p class='font-md'>To set the display of an element:</p>
+        <h2>class='d-NAME'</h2>
+        <h4>class='d-inline-block'</h4>
+    </div>
 
-        <!-- ALIGNMENT -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='align-left font-lg font-header slate'>Alignment.</p>
-            <p class='align-left'>Alignment is used to align an item left, right, or center.</p>
-            <ul class='list-clear align-left font-text l-height-25'>
-                <li class='item-50 bg-water snow font-md align-center margin-top-10p'>Center</li>
-                <li class='item-50 bg-water snow font-md align-left margin-top-10p'>Left</li>
-                <li class='item-50 bg-water snow font-md align-right margin-top-10p'>Right</li>
-            </ul>
-            <p class='font-md'>To set the alignment of an element:</p>
-            <h2>class='align-DIRECTION'</h2>
-            <h4>class='align-center'</h4>
-        </div>
+    <hr class='break'>
 
-        <hr class='break'>
+    <!-- FLOAT -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='float'>
+        <p class='font-lg font-header slate'>Float.</p>
+        <p>Float controls which way an element should float.</p>
+        <ul class='list-clear align-center font-text font-md l-height-25 item-50 snow align-center l-height-25'>
+            <li class='bg-grass item-50 f-left'>Left</li>
+            <li class='bg-fire item-50 f-right'>Right</li>
+        </ul>
+        <p class='font-md'>To set the float of an element:</p>
+        <h2>class='f-DIRECTION'</h2>
+        <h4>class='f-left'</h4>
+    </div>
 
-        <!-- MARGIN -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='align-left font-lg font-header slate'>Margin.</p>
-            <p class='align-left'>Margins are used to create space around an element.</p>
-            <ul class='list-clear align-center font-text l-height-25'>
-                <li class='item-50 bg-grass snow font-md align-center margin-10p'>All</li>
-                <li class='item-50 bg-grass snow font-md align-center margin-left-10p'>Left</li>
-                <li class='item-50 bg-grass snow font-md align-center margin-right-10p'>Right</li>
-                <li class='item-50 bg-grass snow font-md align-center margin-top-10p'>Top</li>
-                <li class='item-50 bg-grass snow font-md align-center margin-bottom-10p'>Bottom</li>
-            </ul>
-            <p>Margins exist in all directions in the following formats: 0, 10px (10p), 5%, 10%, 20%, 25%, 50%, 75%, 100%</p>
-            <p class='font-md'>To set the margins of an element:</p>
-            <h2>class='margin-DIRECTION-NUMBER'</h2>
-            <h4>class='margin-top-50'</h4>
-        </div>
+    <hr class='break'>
 
-        <hr class='break'>
-
-        <!-- PADDING -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='align-left font-lg font-header slate'>Padding.</p>
-            <p class='align-left'>Padding is used to generate space around an element.</p>
-            <ul class='list-clear align-center font-text l-height-25'>
-                <li class='item-50 bg-fire snow font-md align-center pad-10p margin-10p'>All</li>
-                <li class='item-50 bg-fire snow font-md align-center pad-left-10p margin-10p'>Left</li>
-                <li class='item-50 bg-fire snow font-md align-center pad-right-10p margin-10p'>Right</li>
-                <li class='item-50 bg-fire snow font-md align-center pad-top-10p margin-10p'>Top</li>
-                <li class='item-50 bg-fire snow font-md align-center pad-bottom-10p margin-10p'>Bottom</li>
-            </ul>
-            <p>Padding exists in all directions in the following formats: 0, 10px (10p), 20px (20p), 5%, 10%, 20%, 25%, 50%, 75%, 100%</p>
-            <p class='font-md'>To set the padding of an element:</p>
-            <h2>class='pad-DIRECTION-NUMBER'</h2>
-            <h4>class='pad-top-50'</h4>
-        </div>
-
-        <hr class='break'>
-
-        <!-- FONT SIZES -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='align-left font-lg font-header slate'>Font Size.</p>
-            <p class='align-left'>Font size controls the size of an element.</p>
-            <ul class='list-clear align-center font-text l-height-25'>
-                <li class='item-20 rock font-xs align-center l-height-10'>sx</li>
-                <li class='item-20 rock font-sm align-center l-height-20'>sm</li>
-                <li class='item-20 rock font-md align-center l-height-50'>md</li>
-                <li class='item-20 rock font-lg align-center l-height-50'>lg</li>
-                <li class='item-20 rock font-xl align-center l-height-75'>xl</li>
-                <li class='item-20 rock font-xxl align-center l-height-100'>xxl</li>
-            </ul>
-            <p class='font-md'>To set the font size of an element:</p>
-            <h2>class='font-SIZE'</h2>
-            <h4>class='font-lg'</h4>
-        </div>
-
-        <hr class='break'>
-
-        <!-- FONT TYPES -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='align-left font-lg font-header slate'>Font Type.</p>
-            <p class='align-left'>Font size controls the size of an element.</p>
-            <ul class='list-clear align-center font-text l-height-25'>
-                <li class='item-50 rock font-lg font-header align-left l-height-100 margin-left-5'>Header</li>
-                <li class='item-20 rock font-md font-text align-left l-height-75 margin-left-5'>Text</li>
-                <li class='item-20 rock font-md font-default align-left l-height-75 margin-left-5'>Default</li>
-            </ul>
-            <p class='font-md'>To set the font type of an element:</p>
-            <h2>class='font-NAME'</h2>
-            <h4>class='font-header'</h4>
-        </div>
-
-       <!-- <hr class='break'>
-
-         COLUMNS
-        <div id='doc-width' class='align-left font-default margin-left-5'>
-            <p class='align-left font-lg font-header slate'>Columns.</p>
-            <p class='align-left'>Columns help layout elements horizontally on the page.</p>
-            <div class='align-center item-50 d-block'>
-                <div class='col-1 align-center height-50 l-height-50 snow bg-silk'>100%</div>
-                <div class='col-2 align-center height-50 l-height-50 snow bg-grass'>50%</div><div class='col-2 align-center height-50 l-height-50 snow bg-grass'>50%</div>
-                <div class='col-3 align-center height-50 l-height-50 snow bg-fire'>33.3%</div><div class='col-3 align-center height-50 l-height-50 snow bg-fire'>33.3%</div><div class='col-3 align-center height-50 l-height-50 snow bg-fire'>33.3%</div>
-            </div>
-
-            <p>To set the font type of an element:</p>
-            <h2>class='font-NAME'</h2>
-            <h4>class='font-header'</h4>
-        </div> -->
-
-        <hr class='break'>
-
-        <!-- LINE HEIGHT -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='align-left font-lg font-header slate'>Line Height.</p>
-            <p class='align-left'>Line Height controls the height of a text element.</p>
-            <ul class='list-clear align-center font-text l-height-25 item-20 rock font-md align-center'>
-                <li class='l-height-0'>0px</li>
-                <li class='l-height-5'>5px</li>
-                <li class='l-height-10'>10px</li>
-                <li class='l-height-20'>20px</li>
-                <li class='l-height-25'>25px</li>
-                <li class='l-height-50'>50px</li>
-                <li class='l-height-75'>75px</li>
-                <li class='l-height-100'>100px</li>
-                <li class='l-height-150'>150px</li>
-            </ul>
-            <p>Line Height exists in the following sizes: 0px, 5px, 10px, 20px, 25px, 50px, 75px, 100px, 150px</p>
-            <p class='font-md'>To set the line height of an element:</p>
-            <h2>class='l-height-NUMBER'</h2>
-            <h4>class='l-height-50'</h4>
-        </div>
-
-        <hr class='break'>
-
-        <!-- DISPLAY -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='font-lg font-header slate'>Display.</p>
-            <p>Line Height controls the height of a text element.</p>
-            <ul class='list-clear font-text font-md l-height-25 item-50 snow bg-grass align-center'>
-                <li class='d-inline'>Inline</li>
-                <li class='d-block'>Block</li>
-                <li class='d-inline-block'>Inline-Block</li>
-            </ul>
-            <p>Display also offers d-none, which sets the display of an element to none.</p>
-            <p class='font-md'>To set the display of an element:</p>
-            <h2>class='d-NAME'</h2>
-            <h4>class='d-inline-block'</h4>
-        </div>
-
-        <hr class='break'>
-
-        <!-- FLOAT -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
-            <p class='font-lg font-header slate'>Float.</p>
-            <p>Float controls which way an element should float.</p>
-            <ul class='list-clear align-center font-text font-md l-height-25 item-50 snow align-center l-height-25'>
-                <li class='bg-grass item-50 f-left'>Left</li>
-                <li class='bg-fire item-50 f-right'>Right</li>
-            </ul>
-            <p class='font-md'>To set the float of an element:</p>
-            <h2>class='f-DIRECTION'</h2>
-            <h4>class='f-left'</h4>
-        </div>
-
-        <hr class='break'>
-
-        <!-- LINK -->
-        <div id='doc-width' class='margin-left-5 margin-right-5 align-left font-default'>
+    <!-- LINK -->
+        <div class='margin-left-5 margin-right-5 align-left font-default' id='link'>
             <p class='font-lg font-header slate'>Links.</p>
             <p>Links let the user move to a different page, or place on a page.</p>
             <ul class='list-clear align-left font-text font-md l-height-50 item-50 snow align-center margin-left-5'>
@@ -266,36 +280,35 @@
             <h2>class='link-TYPE'</h2>
             <h4>class='link-hover'</h4>
         </div>
-
     </div>
 
 
-    <!-- FOOTER -->
-    <div class=' align-center snow bg-trans'>    
-        <ul class='pad-0'>
-            <li class='list-item-h itemhh-20'>
-                <a href='https://www.linkedin.com/in/juri-kiin/' class='link-clear snow'>
-                    <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class='list-item-h item-h-20 fa-lg'>
-                <a href='https://twitter.com/JuriKiin' class='link-clear snow'>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class='list-item-h item-h-20 fa-lg'>
-                <a href='https://www.instagram.com/juri_kiin/' class='link-clear snow'>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class='list-item-h item-h-20 fa-lg'>
-                <a href='https://www.facebook.com/juri.kiin' class='link-clear snow'>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-            </li>
-        </ul>
-        <span class='l-height-50 font-text'>Developed by Jüri Kiin</span>
-    </div>
+<!-- FOOTER -->
+<div class=' align-center snow bg-trans'>    
+    <ul class='pad-0'>
+        <li class='list-item-h itemhh-20'>
+            <a href='https://www.linkedin.com/in/juri-kiin/' class='link-clear snow'>
+                <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class='list-item-h item-h-20 fa-lg'>
+            <a href='https://twitter.com/JuriKiin' class='link-clear snow'>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class='list-item-h item-h-20 fa-lg'>
+            <a href='https://www.instagram.com/juri_kiin/' class='link-clear snow'>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class='list-item-h item-h-20 fa-lg'>
+            <a href='https://www.facebook.com/juri.kiin' class='link-clear snow'>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+    <span class='l-height-50 font-text'>Developed by Jüri Kiin</span>
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </body>
 </html>
