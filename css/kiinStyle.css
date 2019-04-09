@@ -87,7 +87,7 @@ html{
     margin: 0;
     padding: 0
 }
-.list-item-h{
+.list-inline{
     display: inline;
     text-align: center;
     padding: 14px 16px;
