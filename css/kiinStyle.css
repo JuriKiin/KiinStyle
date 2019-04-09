@@ -87,7 +87,7 @@ html{
     margin: 0;
     padding: 0
 }
-.list-inline{
+.list-item-h{
     display: inline;
     text-align: center;
     padding: 14px 16px;
@@ -781,6 +781,27 @@ html{
 }
 .bor-bot-5{
     border-bottom: 5px solid black;
+}
+
+/* ------------ GRID ------------ */
+.grid-22{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+.grid-33{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+.grid-1{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
 }
 
 /* ------------ MEDIA QUERIES ------------ */
