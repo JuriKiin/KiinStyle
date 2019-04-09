@@ -307,6 +307,22 @@ html{
 .pad-right-20p{
     padding-right:20px;
 }
+/* 50px */
+.pad-50p{
+    padding:50px;
+}
+.pad-top-50p{
+    padding-top:50px;
+}
+.pad-left-50p{
+    padding-left:50px;
+}
+.pad-bottom-50p{
+    padding-bottom:50px;
+}
+.pad-right-50p{
+    padding-right:50px;
+}
 
 /* 5% */
 .pad-5{
