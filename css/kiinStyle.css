@@ -78,9 +78,6 @@ html{
     right:0;
     bottom:0;
 }
-.footer-link{
-    color:black;
-}
 /* ------------ Lists (list-type) ------------*/
 .list-clear{
     list-style-type: none;
@@ -617,11 +614,6 @@ html{
     text-decoration: none;
 }
 .link-hover-subtle:hover{
-    text-decoration: underline;
-}
-
-/* ----------- Text Decoration ------------*/
-.underline{
     text-decoration: underline;
 }
 
