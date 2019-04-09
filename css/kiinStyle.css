@@ -615,7 +615,6 @@ html{
 }
 .link-hover-subtle{
     text-decoration: none;
-    transition: all .25s ease-in-out;
 }
 .link-hover-subtle:hover{
     text-decoration: underline;
