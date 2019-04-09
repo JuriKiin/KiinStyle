@@ -804,15 +804,11 @@ html{
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 50% 50%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
 }
 .grid-33{
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
 }
 .grid-1{
     display: grid;
