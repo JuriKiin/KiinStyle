@@ -801,7 +801,14 @@ html{
 .grid-1{
     display: grid;
     grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
     grid-template-columns: 100%;
+}
+.grid-1 > *, .grid-22 > *, .grid-33 > *{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
 /* ------------ MEDIA QUERIES ------------ */
