@@ -36,6 +36,7 @@
             <li><a class='link-hover coal' href='#list'>Lists</a></li>
             <li><a class='link-hover coal' href='#grid'>Grid</a></li>
             <li><a class='link-hover coal' href='#border'>Border</a></li>
+            <li><a class='link-hover coal' href='#animation'>Animation</a></li>
         </ul>
     </div>
 
@@ -310,13 +311,13 @@
     <div class='margin-left-5 margin-right-5 align-left font-default' id='grid'>
         <p class='font-lg font-header slate'>Grid.</p>
         <p>Grids help with content layout.</p>
-        <div class="grid-22 item-100">
+        <div class="grid-2 item-100">
             <p class="bg-grass pad-10p snow">Item 1</p>
             <p class="bg-grass pad-10p snow">Item 2</p>
             <p class="bg-grass pad-10p snow">Item 3</p>
             <p class="bg-grass pad-10p snow">Item 4</p>
         </div>
-        <div class="grid-33 item-100">
+        <div class="grid-3 item-100">
             <p class="bg-fire pad-10p snow">Item 1</p>
             <p class="bg-fire pad-10p snow">Item 2</p>
             <p class="bg-fire pad-10p snow">Item 3</p>
@@ -327,13 +328,13 @@
             <p class="bg-fire pad-10p snow">Item 8</p>
             <p class="bg-fire pad-10p snow">Item 9</p>
         </div>
-        <div class="grid-1 item-100">
+        <div class="grid-4 item-100">
             <p class="bg-water pad-10p snow">Item 1</p>
             <p class="bg-water pad-10p snow">Item 2</p>
             <p class="bg-water pad-10p snow">Item 3</p>
             <p class="bg-water pad-10p snow">Item 4</p>
         </div>
-        <p>Grid is offered in several layouts: grid-22, grid-33, grid-1</p>
+        <p>Grid is offered in several layouts: grid-1, grid-2, grid-3, grid-4, grid-5</p>
         <p class='font-md'>To style a grid:</p>
         <h2>class='grid-TYPE'</h2>
         <h4>class='grid-22'</h4>
@@ -344,7 +345,7 @@
     <!-- Border -->
     <div class='margin-left-5 margin-right-5 align-left font-default' id='border'>
         <p class='font-lg font-header slate'>Border.</p>
-        <p>Borders help to emphasis and outline content..</p>
+        <p>Borders help to emphasis and outline content.</p>
         <div class='item-50'>
             <p class='bor-1'>Border 1px all</p>
             <p class='bor-bot-2'>Border Bottom 2px</p>
@@ -354,6 +355,34 @@
         <p class='font-md'>To style border:</p>
         <h2>class='bor-TYPE'</h2>
         <h4>class='bor-bot-1'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- Animation -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='animation'>
+        <p class='font-lg font-header slate'>Animation.</p>
+        <p>Animation brings life to your content.</p>
+        <div class='grid-4'>
+            <p class="bg-grass pad-10p snow zoom">zoom</p>
+            <p class="bg-grass pad-10p snow shrink">shrink</p>
+            <p class="bg-grass pad-10p snow twist-r">twist-r</p>
+            <p class="bg-grass pad-10p snow twist-l">twist-l</p>
+
+            <p class="bg-fire pad-10p snow slide-r">slide-r</p>
+            <p class="bg-fire pad-10p snow slide-l">slide-l</p>
+            <p class="bg-fire pad-10p snow slide-u">slide-u</p>
+            <p class="bg-fire pad-10p snow slide-d">slide-d</p>
+
+            <p class="bg-water pad-10p snow pulse">pulse</p>
+            <p class="bg-water pad-10p snow shake">shake</p>
+            <p class="bg-water pad-10p snow spin-r">spin-r</p>
+            <p class="bg-water pad-10p snow spin-l">spin-l</p>
+        </div>
+        <p>Animation styles exist as named in each example: shrink, twist-r, slide-u, shake</p>
+        <p class='font-md'>To add a hover animation:</p>
+        <h2>class='animation name'</h2>
+        <h4>class='twist-l'</h4>
     </div>
 </div>
 

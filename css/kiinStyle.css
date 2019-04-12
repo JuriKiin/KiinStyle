@@ -792,16 +792,6 @@ html{
 }
 
 /* ------------ GRID ------------ */
-.grid-22{
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 50% 50%;
-}
-.grid-33{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-}
 .grid-1{
     display: grid;
     grid-template-rows: auto;
@@ -809,10 +799,96 @@ html{
     justify-items: center;
     grid-template-columns: 100%;
 }
-.grid-1 > *, .grid-22 > *, .grid-33 > *{
+.grid-2{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+}
+.grid-3{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.grid-4{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+}
+.grid-5{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+}
+.grid-1 > *, .grid-2 > *, .grid-3 > *, .grid-4 > *, .grid-5 > *{
     display: flex;
     justify-content: center;
     justify-items: center;
+}
+/* ------------ Animation ------------ */
+.zoom, .shrink, .twist-r, .twist-l, .slide-r, .slide-l, .slide-u, .slide-d{
+    transition: .25s all ease-in-out;
+}
+.zoom:hover{
+    transform: scale(1.15);
+}
+.shrink:hover{
+    transform: scale(0.85);
+}
+.twist-r:hover{
+    transform: rotateZ(25deg);
+}
+.twist-l:hover{
+    transform: rotateZ(-25deg);
+}
+.slide-r:hover{
+    transform: translateX(10px);
+}
+.slide-l:hover{
+    transform: translateX(-10px);
+}
+.slide-u:hover{
+    transform: translateY(10px);
+}
+.slide-d:hover{
+    transform: translateY(-10px);
+}
+.pulse:hover{
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    from { transform: scale(1); }
+    50% { transform: scale(0.85); }
+    to { transform: scale(1); }
+}
+.shake:hover{
+    animation: shake 1s infinite;
+}
+@keyframes shake {
+    from { transform: rotateZ(-15deg); }
+    50% { transform: rotateZ(15deg); }
+    to { transform: rotateZ(-15deg); }
+}
+.spin-r:hover{
+    animation: spin-r 1s;
+}
+@keyframes spin-r {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.spin-l:hover{
+    animation: spin-l 1s;
+}
+@keyframes spin-l {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
 }
 
 /* ------------ MEDIA QUERIES ------------ */
