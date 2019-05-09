@@ -855,10 +855,10 @@ html{
     transform: translateX(-10px);
 }
 .slide-u:hover{
-    transform: translateY(10px);
+    transform: translateY(-10px);
 }
 .slide-d:hover{
-    transform: translateY(-10px);
+    transform: translateY(10px);
 }
 .pulse:hover{
     animation: pulse 1s infinite;
