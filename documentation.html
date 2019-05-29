@@ -20,7 +20,7 @@
         <h1 class='margin-0 snow font-header align-right pad-left-5 font-md d-inline link-hover'><a class='link-clear snow' href='index.html'>Home</a></h1>
     </div><br>
 
-    <div class='fixed left-0 item-10 margin-left-5 bg-snow coal font-header' style="box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <div class='fixed left-0 item-20 margin-left-5 bg-snow coal font-header' style="box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
         <ul class='list-clear pad-left-10 l-height-50 font-md o-auto height-triquart'>
             <li><a class='link-hover coal' href='#color'>Color</a></li>
             <li><a class='link-hover coal' href='#width'>Width</a></li>
@@ -30,6 +30,7 @@
             <li><a class='link-hover coal' href='#padding'>Padding</a></li>
             <li><a class='link-hover coal' href='#fontSize'>Font Size</a></li>
             <li><a class='link-hover coal' href='#fontType'>Font Type</a></li>
+            <li><a class='link-hover coal' href='#fontEffect'>Font Effect</a></li>
             <li><a class='link-hover coal' href='#lineHeight'>Line Height</a></li>
             <li><a class='link-hover coal' href='#display'>Display</a></li>
             <li><a class='link-hover coal' href='#float'>Float</a></li>
@@ -38,10 +39,12 @@
             <li><a class='link-hover coal' href='#grid'>Grid</a></li>
             <li><a class='link-hover coal' href='#border'>Border</a></li>
             <li><a class='link-hover coal' href='#animation'>Animation</a></li>
+            <li><a class='link-hover coal' href='#background'>Backgrounds</a></li>
+            <li><a class='link-hover coal' href='#overflow'>Overflow</a></li>
         </ul>
     </div>
 
-    <div class='bg-snow align-center margin-left-20 margin-right-10'> 
+    <div class='bg-snow align-center margin-left-25 margin-right-10'> 
     <!-- COLOR-->
     <div id='color' class='pad-left-5 align-left font-default pad-top-10p'>
         <p class='align-left font-lg font-header slate'>Color.</p>
@@ -102,6 +105,7 @@
             <li class='item-50 snow bg-fire font-md align-center height-auto l-height-50 margin-10p'></li>
         </ul>
         <p>Height exists in the following heights: 0px, 5px, 10px, 20px, 25px, 50px, 75px, 100px, 150px, auto</p>
+        <p>Height also exists in larger heights: full (100vh), half (50vh), quart (25vh), triquart (75vh)</p>
         <p class='font-md'>To set the height of an element:</p>
         <h2>class='height-NUMBER'</h2>
         <h4>class='height-50'</h4>
@@ -196,22 +200,18 @@
         <h4>class='font-header'</h4>
     </div>
 
-    <!-- <hr class='break'>
+    <hr class='break'>
 
-        COLUMNS
-    <div class='align-left font-default margin-left-5'>
-        <p class='align-left font-lg font-header slate'>Columns.</p>
-        <p class='align-left'>Columns help layout elements horizontally on the page.</p>
-        <div class='align-center item-50 d-block'>
-            <div class='col-1 align-center height-50 l-height-50 snow bg-silk'>100%</div>
-            <div class='col-2 align-center height-50 l-height-50 snow bg-grass'>50%</div><div class='col-2 align-center height-50 l-height-50 snow bg-grass'>50%</div>
-            <div class='col-3 align-center height-50 l-height-50 snow bg-fire'>33.3%</div><div class='col-3 align-center height-50 l-height-50 snow bg-fire'>33.3%</div><div class='col-3 align-center height-50 l-height-50 snow bg-fire'>33.3%</div>
-        </div>
-
-        <p>To set the font type of an element:</p>
-        <h2>class='font-NAME'</h2>
-        <h4>class='font-header'</h4>
-    </div> -->
+    <!-- FONT EFFECTS -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='fontEffect'>
+        <p class='font-lg font-header slate'>Font Effects.</p>
+        <p>Font Effects help to emphasis content.</p>
+        <p class='bold'>This sentence is bolded.</p>
+        <p class="italic">This sentence is italicized.</p>
+        <p class='font-md'>To add a font effect:</p>
+        <h2>class='name'</h2>
+        <h4>class='italic'</h4>
+    </div>
 
     <hr class='break'>
 
@@ -384,6 +384,51 @@
         <p class='font-md'>To add a hover animation:</p>
         <h2>class='animation name'</h2>
         <h4>class='twist-l'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- BACKGROUND IMAGES -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='background'>
+        <p class='font-lg font-header slate'>Backgrounds.</p>
+        <p>Background Images add popping content to a web page.</p>
+        <div class='bg-par height-auto' style="background-image: url('media/background.jpg'); width:100%; height:200px">
+        </div>
+        <p class='bold'>* You must add the background-image URL using inline HTML styles. You must also include
+            a width and height. This can be done as such:</p>
+        <p class="code pad-10p">style="background-image: url('media/background.jpg'); width:100%; height:200px"</p>
+        <p>Background Image styles exist in the following: par, default</p>
+        <p class='font-md'>To add a background image:</p>
+        <h2>class='bg-name'</h2>
+        <h4>class='bg-par'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- OVERFLOW -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='overflow'>
+        <p class='font-lg font-header slate'>Overflow.</p>
+        <p>Overflow helps to manage excess content on the page.</p>
+        <p class='o-scroll bg-water item-10 height-50'>Here is a lot of content to demonstrate how each style affects the DOM element.</p>
+        <p class='o-hidden bg-water item-10 height-50'>Here is a lot of content to demonstrate how each style affects the DOM element.</p>
+        <p class='o-auto bg-water item-10 height-50'>Here is a lot of content to demonstrate how each style affects the DOM element.</p>
+        <p class='o-x bg-water item-10'>Here is a lot of content to demonstrate how each style affects the DOM element.</p> 
+        <p>Overflow styles exist in the following: scroll, hidden, auto, x</p>
+        <p class='font-md'>To add an overflow style:</p>
+        <h2>class='o-name'</h2>
+        <h4>class='o-x'</h4>
+    </div>
+
+    <hr class='break'>
+
+    <!-- Position -->
+    <div class='margin-left-5 margin-right-5 align-left font-default' id='overflow'>
+        <p class='font-lg font-header slate'>Position.</p>
+        <p>Position places objects on the page.</p>
+        <p>Position styles exist in the following: relative, fixed</p>
+        <p class='font-md'>To add a position style:</p>
+        <h2>class='name'</h2>
+        <h4>class='relative'</h4>
     </div>
 </div>
 
