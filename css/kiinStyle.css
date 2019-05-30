@@ -471,6 +471,9 @@ html{
 .italic{
     font-style: italic;
 }
+.ul {
+    text-decoration: underline;
+}
 
 /* ------------ Columns  (CURRENTLY UNSUPPORTED) ------------*/
 [class*='col-'] {
