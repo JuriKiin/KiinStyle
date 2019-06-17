@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="JuriKiin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kiinStyle | Responsive Design</title>
+    <link rel="stylesheet" href="css/kiinStyle.css">
+    <link rel="stylesheet" href="https://jurikiin.com/html/KiinStyle/css/kiinStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="media/kiinStyle.png"/>
+</head>
+<body class='body-clear snow bg-water-gradient'>
+    <div class='align-right l-height-100 pad-right-5'>
+        <h1 class=' margin-0 snow font-header align-left pad-left-5 margin-right-25 font-lg d-inline f-left link-hover-subtle'><a href='index.html' class='link-clear'><img src='media/kiinStyle.png' class='height-75 pad-20p'></a></h1>
+        <ul class='align-right'>
+            <li class=' list-inline font-header font-md link-hover-subtle'><a class='link-clear snow' href='index.html'>Home</a></li>
+            <li class='list-inline font-header font-md link-hover-subtle'><a class='link-clear snow' href='documentation.html'>Documentation</a></li>
+        </ul>
+    </div><br>
+
+    <!-- Article -->
+    <div class="margin-5">
+        <h1 class="font-lg font-header">Introducing... Responsive Design.</h1>
+        <p class="margin-left-5 font-text font-md l-height-50 m-l-height-25">Ever since the beginning of kiinStyle, the main issue has been a lack of responsive design.<br>  
+            Due to the nature of the framework, there hasn't been a way to design sites for mobile.<br>
+            This has been a major issue with kiinStyle, however with this update, it is changed.<br>
+            kiinStyle already decreases font sizes for smaller screens, but no other styles are effected.<br>
+            With the current process, the way to style elements exists as follows:<br>
+        <p class="code coal align-center pad-10p">&lt;p class="font-md pad-10p bg-water snow height-75"&gt;This is a test paragraph.&lt;/p&gt;</p>
+        <p class="font-md pad-10p bg-fire snow height-75">This is a test paragraph.</p>
+
+        <p class="margin-left-5 font-text font-md l-height-50 m-l-height-25">The issue here, is when you scale the screen smaller, or view it on mobile, the height becomes too big for the platform.<br>
+            In order to solve this, kiinStyle is introducing the m- system.<br>
+            For any style that you want to style differently on mobile, simply add an additional class with m- in front.<br>
+            In this example, we are changing the height value to smaller on mobile. (Adding m-height-20)</p>
+        <p class="code coal align-center pad-10p">&lt;p class="font-md pad-10p bg-water snow height-75 m-height-20"&gt;This is a test paragraph.&lt;/p&gt;</p>
+        <p class="font-md pad-10p bg-fire snow height-75 m-height-20">This is a test paragraph.</p>
+
+        <p class="margin-left-5 font-text font-md l-height-50 m-l-height-25">You'll notice that this page decreases the line height of paragraph tags when on smaller screens.</p>
+        <br>
+        <p class="margin-left-5 font-text font-md l-height-50 m-l-height-25">The m- system can be used on any style that exists in the kiinStyle Framework. Enjoy!</p>
+
+
+    </div>
+
+
+
+    <div class='footer bg-trans'>      
+        <ul class='pad-0'>
+            <li class='list-inline itemhh-20'>
+                <a href='https://www.linkedin.com/in/juri-kiin/' class='link-clear snow'>
+                    <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class='list-inline item-h-20 fa-lg'>
+                <a href='https://twitter.com/JuriKiin' class='link-clear snow'>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class='list-inline item-h-20 fa-lg'>
+                <a href='https://www.instagram.com/juri_kiin/' class='link-clear snow'>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class='list-inline item-h-20 fa-lg'>
+                <a href='https://jurikiin.com/' class='link-clear snow'>
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <span class='l-height-50 font-text'>Developed by Jüri Kiin</span>
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>

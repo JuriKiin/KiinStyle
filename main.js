@@ -4,11 +4,12 @@ window.onload = init;
 
 function init() {
     idElements = document.getElementsByClassName("ks-section");
+    if(document.getElementById("search")) {
+        document.getElementById("search").addEventListener("search", function() {
+            Search();
+        });
+    }
 }
-
-document.getElementById("search").addEventListener("search", function() {
-    Search();
-})
 
 function Search() {
     let value = document.getElementById("search").value;
@@ -25,5 +26,8 @@ function Search() {
             document.getElementsByClassName("ks-menuItem")[i].classList.add("d-none");
         }
     }
+}
 
+function OpenPage(url) {
+    window.open(url, "_blank");
 }
