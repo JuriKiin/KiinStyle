@@ -676,7 +676,6 @@ html{
 /* ------------ Code (For displaying code) ------------*/
 .code{
     background-color: #d9dce0;
-    line-height: 50px;
     white-space: nowrap;
     overflow-x: scroll;
 }
