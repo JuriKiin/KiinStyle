@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="JuriKiin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KiinStyle | Live Design</title>
+    <link rel="stylesheet" href="css/kiinStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="media/kiinStyle.png"/>
+</head>
+<body class='body-clear snow'>
+    <!-- CONTROLS -->
+    <div id="controls" class="f-left bg-water item-25 height-full o-scroll">
+        <!-- LOGO -->
+        <div class='grid-1'>
+            <h1 class=' margin-0 item-10 snow font-header align-center font-lg link-hover-subtle'><a href='index.html' class='link-clear'><img src='media/kiinStyle.png' class='height-75 pad-20p'></a></h1>
+        </div>
+        <!-- CONTROLS + HEADER INFO SECTION -->
+        <div id='control-container' class='d-block'>
+            <!-- IMPORT/EXPORT -->
+            <div class='margin-left-10 margin-bottom-5'>
+                <button class='bor-none pad-10p zoom pointer' onclick='toggleImportWindow()'>Import</button>
+                <button class='bor-none pad-10p zoom pointer' onclick='exportHTML()'>Export</button>
+                <h1 onclick='toggleAll(this)' id='toggleShow' class='font-header font-sm margin-right-10 align-right link'>Show All</h1>
+            </div>
+            <!-- CURRENT ELEMENT & DOWNLOAD CONTAINER -->
+            <div>
+                <h1 class='align-center font-text font-sm margin-top-10' id='current-element-container'></h1>
+                <a id='export' class='m-d-none'></a>
+            </div>
+
+            <!-- CONTROLS START HERE -->
+
+            <!-- WIDTH -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Width is used to set how wide an element is.</span>
+                <h1 class='font-header font-md align-left'>Width</h1>
+                <div>
+                    <input oninput="updateControlSliderValue(this,'width')" data-style="width" type="range" value = "0" min='0' max='7' class='item-100 bor-none'>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- HEIGHT -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Height controls the vertical height of an element.</span>
+                <h1 class='font-header font-md align-left'>Height</h1>
+                <div>
+                    <input oninput="updateControlSliderValue(this,'height')" data-style="height" type="range" value = "0" min='0' max='14' class='item-100 bor-none'>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- LINE HEIGHT -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Line Height controls the height of a text element.</span>
+                <h1 class='font-header font-md align-left'>Line Height</h1>
+                <div>
+                    <input oninput="updateControlSliderValue(this,'lineheight')" data-style="lineheight" type="range" value = "0" min='0' max='9' class='item-100 bor-none'>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- MARGIN -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Margins are used to create space around an element.</span>
+                <h1 class='font-header font-md align-left'>Margin</h1>
+                <div>
+                    <h1 class='font-sm align-left font-header'>All</h1>
+                    <input oninput="updateControlSliderValue(this,'margin')" data-style="margin" type="range" value = "0" min='0' max='8' class='item-100 bor-none'>
+                    <h1 class='font-sm align-left font-header'>Top</h1>
+                    <input oninput="updateControlSliderValue(this,'margintop')" data-style="margintop" type="range" value = "0" min='0' max='8' class='item-100 bor-none'>
+                    <h1 class='font-sm align-left font-header'>Left</h1>
+                    <input oninput="updateControlSliderValue(this,'marginleft')" data-style="marginleft" type="range" value = "0" min='0' max='8' class='item-100 bor-none'>
+                    <h1 class='font-sm align-left font-header'>Bottom</h1>
+                    <input oninput="updateControlSliderValue(this,'marginbottom')" data-style="marginbottom" type="range" value = "0" min='0' max='8' class='item-100 bor-none'>
+                    <h1 class='font-sm align-left font-header'>Right</h1>
+                    <input oninput="updateControlSliderValue(this,'marginright')" data-style="marginright" type="range" value = "0" min='0' max='8' class='item-100 bor-none'>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- PADDING -->
+            <div class='margin-10 align-center relative'>
+                    <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                    <span class="tooltip">Margins are used to create space inside an element.</span>
+                    <h1 class='font-header font-md align-left'>Padding</h1>
+                    <div>
+                        <h1 class='font-sm align-left font-header'>All</h1>
+                        <input oninput="updateControlSliderValue(this,'padding')" data-style="padding" type="range" value = "0" min='0' max='10' class='item-100 bor-none'>
+                        <h1 class='font-sm align-left font-header'>Top</h1>
+                        <input oninput="updateControlSliderValue(this,'paddingtop')" data-style="paddingtop" type="range" value = "0" min='0' max='10' class='item-100 bor-none'>
+                        <h1 class='font-sm align-left font-header'>Left</h1>
+                        <input oninput="updateControlSliderValue(this,'paddingleft')" data-style="paddingleft" type="range" value = "0" min='0' max='10' class='item-100 bor-none'>
+                        <h1 class='font-sm align-left font-header'>Bottom</h1>
+                        <input oninput="updateControlSliderValue(this,'paddingbottom')" data-style="paddingbottom" type="range" value = "0" min='0' max='10' class='item-100 bor-none'>
+                        <h1 class='font-sm align-left font-header'>Right</h1>
+                        <input oninput="updateControlSliderValue(this,'paddingright')" data-style="paddingright" type="range" value = "0" min='0' max='10' class='item-100 bor-none'>
+                        <h1 class='font-sm font-header'>Value: --</h1>
+                    </div>
+            </div>
+
+            <!-- ALIGNMENT -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Alignment is used to align an item left, right, or center.</span>
+                <h1 class='font-header font-md align-left'>Alignment</h1>
+                <div>
+                    <div class='grid-3'>
+                        <button class='pad-20p rad-10 pointer margin-left-5 margin-right-5' onclick="updateControlButtonValue(this, 'alignment')" value='0'>Left</button>
+                        <button class='pad-20p rad-10 pointer margin-left-5 margin-right-5' onclick="updateControlButtonValue(this, 'alignment')" value='1'>Center</button>
+                        <button class='pad-20p rad-10 pointer margin-left-5 margin-right-5' onclick="updateControlButtonValue(this, 'alignment')" value='2'>Right</button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- COLOR -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Color sets the text color of the element.</span>
+                <h1 class='font-header font-md align-left'>Color</h1>
+                <div>
+                    <div class='grid-4' id='color-container'>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'color')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'color')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'color')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'color')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'color')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'color')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'color')"></button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- BACKGROUND COLOR -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Background color sets the container color.</span>
+                <h1 class='font-header font-md align-left'>Background Color</h1>
+                <div>
+                    <div class='grid-4' id='background-color-container'>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'backgroundcolor')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'backgroundcolor')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'backgroundcolor')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'backgroundcolor')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'backgroundcolor')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'backgroundcolor')"></button>
+                        <button class='pad-20p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'backgroundcolor')"></button>
+                        <button class='pad-10p rad-10 pointer margin-5 snow font-md l-height-10 bold' onclick="updateControlButtonValue(this, 'backgroundcolor')">X</button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- FONT -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Font controls the typeface of the element.</span>
+                <h1 class='font-header font-md align-left'>Font</h1>
+                <div>
+                    <div class='grid-3'>
+                        <button class='pad-10p rad-10 pointer font-header font-md' onclick="updateControlButtonValue(this, 'font')" value='0'>H</button>
+                        <button class='pad-10p rad-10 pointer font-text font-md' onclick="updateControlButtonValue(this, 'font')" value='1'>T</button>
+                        <button class='pad-10p rad-10 pointer font-default font-md' onclick="updateControlButtonValue(this, 'font')" value='2'>D</button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- FONT SIZE -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Font size controls how large the font is.</span>
+                <h1 class='font-header font-md align-left'>Font Size</h1>
+                <div>
+                    <div class='grid-3'>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'fontsize')" value='0'>XS</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'fontsize')" value='1'>SM</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'fontsize')" value='2'>MD</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'fontsize')" value='3'>LG</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'fontsize')" value='4'>XL</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'fontsize')" value='5'>XXL</button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- TEXT DECORATION -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Text Decoration controls effects on the typeface.</span>
+                <h1 class='font-header font-md align-left'>Text Decoration</h1>
+                <div>
+                    <div class='grid-4 font-md'>
+                        <button class='pad-10p rad-10 pointer align-center font-header bold' onclick="updateControlButtonValue(this, 'textdecoration')" value='0'>B</button>
+                        <button class='pad-10p rad-10 pointer align-center font-header italic' onclick="updateControlButtonValue(this, 'textdecoration')" value='1'>I</button>
+                        <button class='pad-10p rad-10 pointer align-center font-header ul' onclick="updateControlButtonValue(this, 'textdecoration')" value='2'>U</button>
+                        <button class='pad-10p rad-10 pointer align-center font-header bg-clear snow bold' onclick="updateControlButtonValue(this, 'textdecoration')" value='3'>X</button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- GRID -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Grid controls how a container is laid out.</span>
+                <h1 class='font-header font-md align-left'>Grid</h1>
+                <div>
+                    <div class='grid-3'>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'grid')" value='0'>1</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'grid')" value='1'>2</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'grid')" value='2'>3</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'grid')" value='3'>4</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'grid')" value='4'>5</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'grid')" value='5'>X</button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- BORDER -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Borders help to emphasize and outline content.</span>
+                <h1 class='font-header font-md align-left'>Border</h1>
+                <div>
+                    <div>
+                        <h1 class='font-sm align-left font-header'>All</h1>
+                        <input oninput="updateControlSliderValue(this,'border')" data-style="border" type="range" value = "0" min='0' max='3' class='item-100 bor-none'>
+                        <h1 class='font-sm align-left font-header'>Top</h1>
+                        <input oninput="updateControlSliderValue(this,'bordertop')" data-style="bordertop" type="range" value = "0" min='0' max='3' class='item-100 bor-none'>
+                        <h1 class='font-sm align-left font-header'>Left</h1>
+                        <input oninput="updateControlSliderValue(this,'borderleft')" data-style="borderleft" type="range" value = "0" min='0' max='3' class='item-100 bor-none'>
+                        <h1 class='font-sm align-left font-header'>Bottom</h1>
+                        <input oninput="updateControlSliderValue(this,'borderbottom')" data-style="borderbottom" type="range" value = "0" min='0' max='3' class='item-100 bor-none'>
+                        <h1 class='font-sm align-left font-header'>Right</h1>
+                        <input oninput="updateControlSliderValue(this,'borderright')" data-style="borderright" type="range" value = "0" min='0' max='3' class='item-100 bor-none'>
+                        <h1 class='font-sm font-header'>Value: --</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DISPLAY -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Display effects the rendering box of the element.</span>
+                <h1 class='font-header font-md align-left'>Display</h1>
+                <div>
+                    <div class='grid-3'>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'display')" value='0'>None</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'display')" value='1'>Inline</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'display')" value='2'>Inline-Block</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'display')" value='3'>Block</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'display')" value='4'>Initial</button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- FLOAT -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Float controls which way an element should float.</span>
+                <h1 class='font-header font-md align-left'>Float</h1>
+                <div>
+                    <div class='grid-2'>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'float')" value='0'>L</button>
+                        <button class='margin-5 pad-5 rad-10 pointer font-header font-sm' onclick="updateControlButtonValue(this, 'float')" value='1'>R</button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+
+            <!-- ANIMATION -->
+            <div class='margin-10 align-center relative'>
+                <span class='f-right font-sm font-text carrot link-hover-subtle'>Hide</span>
+                <span class="tooltip">Animation brings life to your content.</span>
+                <h1 class='font-header font-md align-left'>Animation</h1>
+                <div>
+                    <div class='grid-5'>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='0'>Zoom</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='1'>Shrink</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='2'>Twist R</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='3'>Twist L</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='4'>Slide R</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='5'>Slide L</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='6'>Slide U</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='7'>Slide D</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='8'>Pulse</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='9'>Shake</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='10'>Spin R</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='11'>Spin L</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='12'>X</button>
+                    </div>
+                    <h1 class='font-sm font-header'>Value: --</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SITE BODY -->
+    <div id="site-body" class="f-right bg-snow item-75 height-full o-scroll coal">
+        <h1>Live Editing Design.</h1>
+        <p>
+                You can use this online editor to style your HTML live in browser!
+                The controls on the left are linked directly to the KiinStyle CSS 
+                framework. Once you upload your HTML, you can use them to add the same
+                classes that exist in the framework without all of the coding! Once
+                you are finished with styling your page, you can download the new 
+                styled framework. And dont worry! We will automatically link the
+                framework in your HTML so you can go back and edit by yourself!
+        </p>
+        <p>
+            As of right now, you can't directly edit the content of your pages,
+            but that's something we are looking at for the future! But for now, 
+            feel free to edit this HTML to your liking, or get started by uploading
+            your own HTML!
+        </p>
+        <div>
+            <p>Paragraph 1</p>
+            <p>Paragraph 1</p>
+            <p>Paragraph 1</p>
+            <p>Paragraph 1</p>
+        </div>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>  
+        <p id='breadcrumbs' class='absolute item-100 bottom-0 body-clear pad-left-10p pad-right-10p bg-rock snow'></p>
+    </div>
+
+    <!-- HTML EDITOR -->
+    <div class='center item-50 bg-silk pad-left-5 pad-right-5 pad-top-20p pad-bottom-20p rad-10p d-none' id='import-window' data-keyboard="false" data-backdrop="static">
+        <h1 class="align-left font-sm font-header">HTML Editor</h1>
+        <div class='relative'>
+            <span class="tooltip">Only paste in code inside the body tags of your HTML file.</span>
+            <h1 class='font-header font-md'>Edit your HTML here (Body Content Only):</h1>
+        </div>
+        <textarea class='item-100 height-quart'></textarea>
+        <div>
+            <button class='pad-10p margin-top-10p pulse pointer font-text bg-water bor-none snow font-sm' onclick='importHTML()'>Import</button>
+            <button class='pad-10p margin-top-10p shrink pointer font-text bg-fire bor-none snow font-sm' onclick='toggleImportWindow()'>Cancel</button>
+        </div>
+       
+    </div>
+
+    <script src='js/loader.js'></script>
+    <script src="js/editor.js"></script>
+</body>
+</html>

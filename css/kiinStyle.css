@@ -68,6 +68,9 @@ html{
     background: rgb(42,30,92);
     background: linear-gradient(90deg, rgba(42,30,92,1) 40%, rgba(32,109,197,1) 100%);
 }
+.bg-clear{
+    background-color: transparent;
+}
 
 /* ------------ Header (header-) ------------*/
 /* ------------ Footers (footer-) ------------*/
@@ -93,6 +96,9 @@ html{
 /* ------------ List Items (item-#) ------------*/
 .item-100{
     width:100%;
+}
+.item-90{
+    width:90%;
 }
 .item-75{
     width:75%;
@@ -474,6 +480,9 @@ html{
 .ul {
     text-decoration: underline;
 }
+.none{
+    text-decoration: none;
+}
 
 /* ------------ Columns  (CURRENTLY UNSUPPORTED) ------------*/
 [class*='col-'] {
@@ -594,6 +603,9 @@ html{
 .d-none{
     display: none;
 }
+.d-initial{
+    display: initial;
+}
 
 /* ------------ Floats (f-direction) ------------*/
 .f-left{
@@ -606,6 +618,9 @@ html{
 [class*='link'] {
     cursor: pointer;
     transition: all .2s ease-in-out;
+}
+.pointer{
+    cursor: pointer;
 }
 
 .link{
@@ -648,6 +663,17 @@ html{
 }
 .relative{
     position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* ----------- Button ------------*/
@@ -738,19 +764,19 @@ html{
 .bottom-0{
     bottom:0;
 }
-.bottom-0{
+.bottom-5{
     bottom:5%;
 }
-.bottom-0{
+.bottom-10{
     bottom:10%;
 }
-.bottom-0{
+.bottom-20{
     bottom:20%;
 }
-.bottom-0{
+.bottom-25{
     bottom:25%;
 }
-.bottom-0{
+.bottom-50{
     bottom:50%;
 }
 
@@ -800,6 +826,9 @@ html{
 }
 .bor-bot-5{
     border-bottom: 5px solid black;
+}
+.bor-none{
+    border:none;
 }
 
 /* ------------ GRID ------------ */
@@ -918,6 +947,99 @@ html{
     position: relative;
 }
 
+/* ------------ Border Radius ------------ */
+.rad-5{
+    border-radius: 5%;
+}
+.rad-5p{
+    border-radius: 5px;
+}
+.rad-10{
+    border-radius: 10%;
+}
+.rad-10p{
+    border-radius: 10px;
+}
+.rad-25{
+    border-radius: 25%;
+}
+.rad-25p{
+    border-radius: 25px;
+}
+.rad-50{
+    border-radius: 50%;
+}
+.rad-50p{
+    border-radius: 50px;
+}
+.rad-100{
+    border-radius: 100%;
+}
+.rad-100p{
+    border-radius: 100px;
+}
+
+/* ------------ TOOL TIP ------------ */
+.tooltip{
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip-show{
+    visibility: visible;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 10%;
+    margin-left: -60px;
+}
+
+/* Tooltip arrow */
+.tooltip-show::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* ------------ EDITOR STYLES ------------ */
+.editor-highlight {
+    background-color: #c5332083;
+    cursor: pointer;
+    opacity: .7;
+}
+.editor-selected {
+    border: 1px solid #1d31e6;
+    cursor: pointer;
+}
+.editor-body-selected {
+    background-color: #dddddd86;
+    cursor: pointer;
+}
+
 /* ------------ MEDIA QUERIES ------------ */
 @media screen and (max-width: 750px) {
     .font-xxl{
@@ -1018,6 +1140,9 @@ html{
     /* (MOBILE) ------------ List Items (item-#) ------------*/
     .m-item-100{
         width:100% !important;
+    }
+    .m-item-90{
+        width:90%;
     }
     .m-item-75{
         width:75% !important;
