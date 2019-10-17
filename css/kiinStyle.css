@@ -1060,6 +1060,13 @@ html{
         margin-right:25%;
     }
 
+    /* ------------ Slideshow (body-name) ------------ */
+    .ks-slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
     /* (MOBILE) ------------ Body (body-name) ------------ */
     .m-body-clear{
         margin:0 !important;
