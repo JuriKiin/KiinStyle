@@ -19,3 +19,4 @@ let jsConfigureSlideshow = (animationType) => {
         }, e.getAttribute('ks-slide-time'));
     };
 };
+jsConfigureSlideshow();
