@@ -86,6 +86,7 @@ function checkInput(e) {
 
 //TOGGLE THE CONTROL PANEL ON/OFF (USE SPACE)
 function toggleControlPanel() {
+    document.getElementsByClassName('d-block').display = 'none' 
     if(document.body.firstElementChild.classList.contains('item-25')) {
         document.getElementById('controls').classList.remove('item-25');
         document.getElementById('controls').classList.add('item-10');
@@ -123,17 +124,26 @@ function toggleAll(e) {
     }
 }
 function toggleShowControl(e) {
-    let target = e.srcElement.parentElement.getElementsByTagName('div')[0];
+    let target = e.target.parentElement.getElementsByTagName('div')[0];
     if(target.classList.contains('d-none')){
-        e.srcElement.innerHTML = 'Hide';
+        e.target.innerHTML = 'Hide';
         target.classList.remove('d-none');
         target.classList.add('d-block');
     } else {
-        e.srcElement.innerHTML = 'Show';
+        e.target.innerHTML = 'Show';
         target.classList.add('d-none');
         target.classList.remove('d-block');
-        recentElement = e.srcElement;
+        recentElement = e.target;
     }
+}
+
+let showHelp = (show) => {
+    if (show) {
+        document.getElementById('help-window').classList.remove('d-none');
+    } else {
+        document.getElementById('help-window').classList.add('d-none');
+    }
+   
 }
 
 //Functions used to set styles
@@ -162,16 +172,16 @@ function updateControlButtonValue(e, controlName) {
 
 //Control hovering on HTML elements
 function beginHover(e) {
-    e.srcElement.classList.add('editor-highlight');
+    e.target.classList.add('editor-highlight');
 }
 function endHover(e) {
-    e.srcElement.classList.remove('editor-highlight');
+    e.target.classList.remove('editor-highlight');
 }
 
 function selectElement(e) {
     if(selectedElement) deselect();
     //Set the text values of current and sliders for each if contains that style.
-    selectedElement = e.srcElement;
+    selectedElement = e.target;
     let elementID = selectedElement.getAttribute('id');
     if(!elementID) elementID = '--';
     document.getElementById('current-element-container').innerHTML = selectedElement.tagName + "; with ID: " + elementID;
@@ -209,13 +219,13 @@ function setupTooltips() {
         let toolTipTarget = e[i].nextElementSibling;
         toolTipTarget.addEventListener('mouseover', (e) => {
             if(!canUseToolTips) return;
-            e.srcElement.previousElementSibling.classList.remove('tooltip');
-            e.srcElement.previousElementSibling.classList.add('tooltip-show');
+            e.target.previousElementSibling.classList.remove('tooltip');
+            e.target.previousElementSibling.classList.add('tooltip-show');
         });
         toolTipTarget.addEventListener('mouseout', (e) => {
             if(!canUseToolTips) return;
-            e.srcElement.previousElementSibling.classList.add('tooltip');
-            e.srcElement.previousElementSibling.classList.remove('tooltip-show');
+            e.target.previousElementSibling.classList.add('tooltip');
+            e.target.previousElementSibling.classList.remove('tooltip-show');
         });
     }
 }

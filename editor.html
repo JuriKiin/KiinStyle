@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="author" content="JuriKiin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KiinStyle | Live Design</title>
+    <title>KiinStyle | LiveDesign</title>
     <link rel="stylesheet" href="css/kiinStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8dc16f6ced.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/png" href="media/kiinStyle.png"/>
 </head>
 <body class='body-clear snow'>
@@ -289,17 +289,17 @@
                     <div class='grid-5'>
                         <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='0'>Zoom</button>
                         <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='1'>Shrink</button>
-                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='2'>Twist R</button>
-                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='3'>Twist L</button>
-                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='4'>Slide R</button>
-                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='5'>Slide L</button>
-                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='6'>Slide U</button>
-                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='7'>Slide D</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='2'>Twist Right</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='3'>Twist Left</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='4'>Slide Right</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='5'>Slide Left</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='6'>Slide Up</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='7'>Slide Down</button>
                         <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='8'>Pulse</button>
                         <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='9'>Shake</button>
-                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='10'>Spin R</button>
-                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='11'>Spin L</button>
-                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='12'>X</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='10'>Spin Right</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='11'>Spin Left</button>
+                        <button class='pad-10p rad-10 pointer margin-5' onclick="updateControlButtonValue(this, 'animation')" value='12'>None</button>
                     </div>
                     <h1 class='font-sm font-header'>Value: --</h1>
                 </div>
@@ -309,15 +309,19 @@
     
     <!-- SITE BODY -->
     <div id="site-body" class="f-right bg-snow item-75 height-full o-scroll coal">
-        <h1>Live Editing Design.</h1>
+        <h1>Live Design.</h1>
         <p>
-                You can use this online editor to style your HTML live in browser!
-                The controls on the left are linked directly to the KiinStyle CSS 
-                framework. Once you upload your HTML, you can use them to add the same
-                classes that exist in the framework without all of the coding! Once
-                you are finished with styling your page, you can download the new 
-                styled framework. And dont worry! We will automatically link the
-                framework in your HTML so you can go back and edit by yourself!
+            You can use this online editor to style your HTML live in the browser!
+            The controls on the left are linked directly to the KiinStyle CSS 
+            framework. Once you upload your HTML, you can use them to add the same
+            classes that exist in the framework without all of the coding! Once
+            you are finished with styling your page, you can download the new 
+            styled framework. And dont worry! We will automatically link the
+            framework in your HTML so you can go back and edit by yourself!
+        </p>
+        <p>
+            Whether you're working on a new website, or simply prototyping new components,
+            LiveDesign can help you quickly iterate and design your HTML.
         </p>
         <p>
             As of right now, you can't directly edit the content of your pages,
@@ -325,16 +329,11 @@
             feel free to edit this HTML to your liking, or get started by uploading
             your own HTML!
         </p>
-        <div>
-            <p>Paragraph 1</p>
-            <p>Paragraph 1</p>
-            <p>Paragraph 1</p>
-            <p>Paragraph 1</p>
-        </div>
+        <p>We use LiveDesign to do the follwing:</p>
         <ul>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
+            <li>Prototype reusable components</li>
+            <li>Design web pages</li>
+            <li>Speed up the development process</li>
         </ul>  
         <p id='breadcrumbs' class='absolute item-100 bottom-0 body-clear pad-left-10p pad-right-10p bg-rock snow'></p>
     </div>
@@ -344,15 +343,31 @@
         <h1 class="align-left font-sm font-header">HTML Editor</h1>
         <div class='relative'>
             <span class="tooltip">Only paste in code inside the body tags of your HTML file.</span>
-            <h1 class='font-header font-md'>Edit your HTML here (Body Content Only):</h1>
+            <h1 class='font-header font-md'>Edit your HTML here:</h1>
         </div>
         <textarea class='item-100 height-quart'></textarea>
         <div>
             <button class='pad-10p margin-top-10p pulse pointer font-text bg-water bor-none snow font-sm' onclick='importHTML()'>Import</button>
             <button class='pad-10p margin-top-10p shrink pointer font-text bg-fire bor-none snow font-sm' onclick='toggleImportWindow()'>Cancel</button>
         </div>
-       
     </div>
+
+    <!-- Help Window -->
+    <div class='center item-50 bg-silk pad-left-5 pad-right-5 pad-top-20p pad-bottom-20p rad-10p d-none' id='help-window'>
+        <h1>Help</h1>
+        <h2>Controls</h2>
+        <ul>
+            <li>Toggle Edit Menu</li>
+            <li>Hide/Expand all styles</li>
+            <li>Reset Breadcrumbs</li>
+            <li>Toggle Tooltips</li>
+            <li>Toggle Sliders</li>
+        </ul>
+    </div>
+
+
+    <!-- HELP BUTTON-->
+    <i id='help' class="far fa-question-circle absolute bottom-10p right-10p coal font-md pointer" onclick="showHelp(true)"></i>
 
     <script src='js/loader.js'></script>
     <script src="js/editor.js"></script>

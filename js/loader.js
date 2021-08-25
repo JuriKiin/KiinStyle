@@ -5,7 +5,6 @@ let breadcrumbReference = "absolute item-100 bottom-0 body-clear pad-left-10p pa
 function importHTML() {
     let body = document.getElementById('site-body');
     body.innerHTML = document.getElementById('import-window').getElementsByTagName('textarea')[0].value;
-    console.log(body.childElementCount);
     for(let i = 0; i < body.childElementCount; i++) {
         if(body.children[i].nodeName == 'IMG') {
             body.children[i].setAttribute('src','../media/image-template.png');
@@ -51,5 +50,5 @@ function download(text, filename){
 
 function exportHTML() {
     let html = defaultOutput + document.getElementById('site-body').innerHTML + defaultTrailOutput;
-    download(html,'test.html');
+    download(html,'index-ks.html');
 }

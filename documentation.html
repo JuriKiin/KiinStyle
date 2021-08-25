@@ -26,6 +26,7 @@
             <li class="ks-menuItem"><a class='link-hover coal' href='#animation'>Animation</a></li>
             <li class="ks-menuItem"><a class='link-hover coal' href='#background'>Backgrounds</a></li>
             <li class="ks-menuItem"><a class='link-hover coal' href='#border'>Border</a></li>
+            <li class="ks-menuItem"><a class='link-hover coal' href='#border-radius'>Border Radius</a></li>
             <li class="ks-menuItem"><a class='link-hover coal' href='#color'>Color</a></li>
             <li class="ks-menuItem"><a class='link-hover coal' href='#display'>Display</a></li>
             <li class="ks-menuItem"><a class='link-hover coal' href='#float'>Float</a></li>
@@ -45,7 +46,7 @@
         </ul>
     </div>
 
-    <div class='bg-snow align-center margin-left-25 margin-right-10 pad-top-10p'> 
+    <div class='bg-snow align-center margin-left-25 margin-right-10 pad-top-10p pad-bottom-50p'> 
         <!-- ALIGNMENT -->
         <div class='margin-left-5 margin-right-5 align-left font-default ks-section' id='alignment'>
             <p class='align-left font-lg font-header slate'>Alignment.</p>
@@ -55,9 +56,11 @@
                 <li class='item-50 bg-water snow font-md align-left margin-top-10p'>Left</li>
                 <li class='item-50 bg-water snow font-md align-right margin-top-10p'>Right</li>
             </ul>
-            <p class='font-md'>To set the alignment of an element:</p>
-            <h2>class='align-DIRECTION'</h2>
-            <h4>class='align-center'</h4>
+            <ul class='list-clear list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>align-center</li>
+                <li class='code pad-10p scroll-hidden'>align-left</li>
+                <li class='code pad-10p scroll-hidden'>align-right</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -66,26 +69,25 @@
         <div class='margin-left-5 margin-right-5 align-left font-default ks-section' id='animation'>
             <p class='font-lg font-header slate'>Animation.</p>
             <p>Animation brings life to your content.</p>
-            <div class='grid-4'>
+            <div class='grid-4 align-left'>
                 <p class="bg-grass pad-10p snow zoom">zoom</p>
                 <p class="bg-grass pad-10p snow shrink">shrink</p>
                 <p class="bg-grass pad-10p snow twist-r">twist-r</p>
-                <p class="bg-grass pad-10p snow twist-l">twist-l</p>
+                <p class="bg-grass pad-10p snow slide-u">slide-u</p>
     
-                <p class="bg-fire pad-10p snow slide-r">slide-r</p>
-                <p class="bg-fire pad-10p snow slide-l">slide-l</p>
-                <p class="bg-fire pad-10p snow slide-u">slide-u</p>
-                <p class="bg-fire pad-10p snow slide-d">slide-d</p>
-    
-                <p class="bg-water pad-10p snow pulse">pulse</p>
-                <p class="bg-water pad-10p snow shake">shake</p>
-                <p class="bg-water pad-10p snow spin-r">spin-r</p>
-                <p class="bg-water pad-10p snow spin-l">spin-l</p>
+                <p class="bg-grass pad-10p snow pulse">pulse</p>
+                <p class="bg-grass pad-10p snow shake">shake</p>
+                <p class="bg-grass pad-10p snow spin-r">spin-r</p>
             </div>
-            <p>Animation styles exist as named in each example: shrink, twist-r, slide-u, shake</p>
-            <p class='font-md'>To add a hover animation:</p>
-            <h2>class='animation name'</h2>
-            <h4>class='twist-l'</h4>
+            <ul class='list-clear list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>zoom</li>
+                <li class='code pad-10p scroll-hidden'>shrink</li>
+                <li class='code pad-10p scroll-hidden'>twist-(r/l)</li>
+                <li class='code pad-10p scroll-hidden'>slide-(u/d/l/r)</li>
+                <li class='code pad-10p scroll-hidden'>pulse</li>
+                <li class='code pad-10p scroll-hidden'>shake</li>
+                <li class='code pad-10p scroll-hidden'>spin-(l/r)</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -96,13 +98,12 @@
             <p>Background Images add popping content to a web page.</p>
             <div class='bg-par height-auto' style="background-image: url('media/background.jpg'); width:100%; height:200px">
             </div>
-            <p class='bold'>* You must add the background-image URL using inline HTML styles. You must also include
+            <p class='italic'>*You must add the background-image URL using inline HTML styles. You must also include
                 a width and height. This can be done as such:</p>
-            <p class="code pad-10p o-x">style="background-image: url('media/background.jpg'); width:100%; height:200px"</p>
-            <p>Background Image styles exist in the following: par, default</p>
-            <p class='font-md'>To add a background image:</p>
-            <h2>class='bg-name'</h2>
-            <h4>class='bg-par'</h4>
+            <p class="code scroll-hidden pad-10p o-x">style="background-image: url('media/background.jpg'); width:100%; height:200px"</p>
+            <ul class='list-clear list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>bg-par</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -116,10 +117,37 @@
                 <p class='bor-bot-2'>Border Bottom 2px</p>
                 <p class='bor-right-5'>Border Right 5px</p>
             </div>
-            <p>Border styles exists in the following for 1px, 2px, and 5px: bor-1, bor-bot-2, bor-right-5,</p>
-            <p class='font-md'>To style border:</p>
-            <h2>class='bor-TYPE'</h2>
-            <h4>class='bor-bot-1'</h4>
+            <p>*Don't specify a direction in order to apply to all sides. Otherwise use (left/right/top/bot)</p>
+            <ul class='list-clear list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-1</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-2</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-5</li>
+            </ul>
+        </div>
+
+        <hr class='break'>
+
+        <!-- Border Radius -->
+        <div class='margin-left-5 margin-right-5 align-left font-default ks-section' id='border-radius'>
+            <p class='font-lg font-header slate'>Border Radius.</p>
+            <p>Border radius rounds the corners of an elements outer border edge.</p>
+            <ul class='list-inline'>
+                <li class='bg-water pad-20p snow rad-5p'>5px</li>
+                <li class='bg-water pad-20p snow rad-25'>25%</li>
+                <li class='bg-water pad-20p snow rad-100p'>100%</li>
+            </ul>
+            <ul class='list-clear list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-5</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-5p</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-10</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-10p</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-25</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-25p</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-50</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-50p</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-100</li>
+                <li class='code pad-10p scroll-hidden'>bor-#DIR-100p</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -137,12 +165,16 @@
                 <li class='coal'>Snow <span class='bg-snow margin-left-5'>(White)</span></li>
                 <li class='coal'>Coal <span class='bg-coal margin-left-5'>Color</span></li>
             </ul>
-            <p class='font-md'>To set text color using these primary colors:</p>
-            <h2>class='COLOR'</h2>
-            <h4>class='grass'</h4>
-            <p class='font-md'>To set background color using these primary colors:</p>
-            <h2>class='bg-COLOR'</h2>
-            <h4>class='bg-grass'</h4>
+            <p>Use the default to set text color, and use the <span class='code pad-10p d-inline item-10'>bg-</span> prefix to set background color.</p>
+            <ul class='list-clear list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>grass</li>
+                <li class='code pad-10p scroll-hidden'>water</li>
+                <li class='code pad-10p scroll-hidden'>rock</li>
+                <li class='code pad-10p scroll-hidden'>fire</li>
+                <li class='code pad-10p scroll-hidden'>silk</li>
+                <li class='code pad-10p scroll-hidden'>snow</li>
+                <li class='code pad-10p scroll-hidden'>coal</li>
+            </ul>
         </div>
 
         <hr class='break'>
@@ -156,10 +188,13 @@
                 <li class='d-block'>Block</li>
                 <li class='d-inline-block'>Inline-Block</li>
             </ul>
-            <p>Display also offers d-none, which sets the display of an element to none.</p>
-            <p class='font-md'>To set the display of an element:</p>
-            <h2>class='d-NAME'</h2>
-            <h4>class='d-inline-block'</h4>
+            <ul class='list-clear list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>d-inline</li>
+                <li class='code pad-10p scroll-hidden'>d-block</li>
+                <li class='code pad-10p scroll-hidden'>d-inline-block</li>
+                <li class='code pad-10p scroll-hidden'>d-none</li>
+                <li class='code pad-10p scroll-hidden'>d-initial</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -172,9 +207,11 @@
                 <li class='bg-grass item-50 f-left'>Left</li>
                 <li class='bg-fire item-50 f-right'>Right</li>
             </ul>
-            <p class='font-md'>To set the float of an element:</p>
-            <h2>class='f-DIRECTION'</h2>
-            <h4>class='f-left'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>f-left</li>
+                <li class='code pad-10p scroll-hidden'>f-right</li>
+                <li class='code pad-10p scroll-hidden'>f-none</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -183,13 +220,17 @@
         <div class='margin-left-5 margin-right-5 align-left font-default ks-section' id='fontEffect'>
             <p class='font-lg font-header slate'>Font Effects.</p>
             <p>Font Effects help to emphasis content.</p>
-            <p class='bold'>This sentence is bolded.</p>
-            <p class="italic">This sentence is italicized.</p>
-            <p class="ul">This sentence is underlined.</p>
-            <p>Font Effects are offered in several styles: bold, italic, ul (underlined)</p>
-            <p class='font-md'>To add a font effect:</p>
-            <h2>class='name'</h2>
-            <h4>class='italic'</h4>
+            <div>
+                <p class='bold'>This sentence is bolded.</p>
+                <p class="italic">This sentence is italicized.</p>
+                <p class="ul">This sentence is underlined.</p>
+            </div>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>bold</li>
+                <li class='code pad-10p scroll-hidden'>italic</li>
+                <li class='code pad-10p scroll-hidden'>ul</li>
+                <li class='code pad-10p scroll-hidden'>none</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -206,9 +247,14 @@
                 <li class='item-20 rock font-xl align-center l-height-75'>xl</li>
                 <li class='item-20 rock font-xxl align-center l-height-100'>xxl</li>
             </ul>
-            <p class='font-md'>To set the font size of an element:</p>
-            <h2>class='font-SIZE'</h2>
-            <h4>class='font-lg'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>font-xs</li>
+                <li class='code pad-10p scroll-hidden'>font-sm</li>
+                <li class='code pad-10p scroll-hidden'>font-md</li>
+                <li class='code pad-10p scroll-hidden'>font-lg</li>
+                <li class='code pad-10p scroll-hidden'>font-xl</li>
+                <li class='code pad-10p scroll-hidden'>font-xxl</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -222,9 +268,11 @@
                 <li class='item-20 rock font-md font-text align-left l-height-75 margin-left-5'>Text</li>
                 <li class='item-20 rock font-md font-default align-left l-height-75 margin-left-5'>Default</li>
             </ul>
-            <p class='font-md'>To set the font type of an element:</p>
-            <h2>class='font-NAME'</h2>
-            <h4>class='font-header'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>font-header</li>
+                <li class='code pad-10p scroll-hidden'>font-text</li>
+                <li class='code pad-10p scroll-hidden'>font-default</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -256,10 +304,13 @@
                 <p class="bg-water pad-10p snow">Item 3</p>
                 <p class="bg-water pad-10p snow">Item 4</p>
             </div>
-            <p>Grid is offered in several layouts: grid-1, grid-2, grid-3, grid-4, grid-5</p>
-            <p class='font-md'>To style a grid:</p>
-            <h2>class='grid-TYPE'</h2>
-            <h4>class='grid-2'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>grid-1</li>
+                <li class='code pad-10p scroll-hidden'>grid-2</li>
+                <li class='code pad-10p scroll-hidden'>grid-3</li>
+                <li class='code pad-10p scroll-hidden'>grid-4</li>
+                <li class='code pad-10p scroll-hidden'>grid-5</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -280,11 +331,22 @@
                 <li class='item-50 snow bg-fire font-md align-center height-150 l-height-50 margin-10p'></li>
                 <li class='item-50 snow bg-fire font-md align-center height-auto l-height-50 margin-10p'></li>
             </ul>
-            <p>Height exists in the following heights: 0px, 5px, 10px, 20px, 25px, 50px, 75px, 100px, 150px, auto</p>
-            <p>Height also exists in larger heights: full (100vh), half (50vh), quart (25vh), triquart (75vh)</p>
-            <p class='font-md'>To set the height of an element:</p>
-            <h2>class='height-NUMBER'</h2>
-            <h4>class='height-50'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>height-0</li>
+                <li class='code pad-10p scroll-hidden'>height-5</li>
+                <li class='code pad-10p scroll-hidden'>height-10</li>
+                <li class='code pad-10p scroll-hidden'>height-20</li>
+                <li class='code pad-10p scroll-hidden'>height-25</li>
+                <li class='code pad-10p scroll-hidden'>height-50</li>
+                <li class='code pad-10p scroll-hidden'>height-75</li>
+                <li class='code pad-10p scroll-hidden'>height-100</li>
+                <li class='code pad-10p scroll-hidden'>height-150</li>
+                <li class='code pad-10p scroll-hidden'>height-auto</li>
+                <li class='code pad-10p scroll-hidden'>height-full</li>
+                <li class='code pad-10p scroll-hidden'>height-half</li>
+                <li class='code pad-10p scroll-hidden'>height-quart</li>
+                <li class='code pad-10p scroll-hidden'>height-triquart</li>
+            </ul>
         </div>   
     
         <hr class='break'>
@@ -304,10 +366,17 @@
                 <li class='l-height-100'>100px</li>
                 <li class='l-height-150'>150px</li>
             </ul>
-            <p>Line Height exists in the following sizes: 0px, 5px, 10px, 20px, 25px, 50px, 75px, 100px, 150px</p>
-            <p class='font-md'>To set the line height of an element:</p>
-            <h2>class='l-height-NUMBER'</h2>
-            <h4>class='l-height-50'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>l-height-0</li>
+                <li class='code pad-10p scroll-hidden'>l-height-5</li>
+                <li class='code pad-10p scroll-hidden'>l-height-10</li>
+                <li class='code pad-10p scroll-hidden'>l-height-20</li>
+                <li class='code pad-10p scroll-hidden'>l-height-25</li>
+                <li class='code pad-10p scroll-hidden'>l-height-50</li>
+                <li class='code pad-10p scroll-hidden'>l-height-75</li>
+                <li class='code pad-10p scroll-hidden'>l-height-100</li>
+                <li class='code pad-10p scroll-hidden'>l-height-150</li>
+            </ul>
         </div>
 
         <hr class='break'>
@@ -322,10 +391,13 @@
                 <li><a href='#' class='link-hover water'>link-hover</a></li>
                 <li><a href='#' class='link-hover-subtle water'>link-hover-subtle</a></li>
             </ul>
-            <p>Links have several default styles: link, link-clear, link-hover, link-hover-subtle</p>
-            <p class='font-md'>To style a link:</p>
-            <h2>class='link-TYPE'</h2>
-            <h4>class='link-hover'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>pointer</li>
+                <li class='code pad-10p scroll-hidden'>link</li>
+                <li class='code pad-10p scroll-hidden'>link-clear</li>
+                <li class='code pad-10p scroll-hidden'>link-subtle</li>
+                <li class='code pad-10p scroll-hidden'>link-hover-subtle</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -334,18 +406,20 @@
         <div class='margin-left-5 margin-right-5 align-left font-default ks-section' id='list'>
             <p class='font-lg font-header slate'>Lists.</p>
             <p>Lists help to itemize content.</p>
-            <ul class='list-clear align-left font-text font-md l-height-50 item-50 snow align-center'>
-                <li class="coal">List (Clear)</li>
+            <ul class='list-clear align-left font-text l-height-25 item-50 snow align-center'>
+                <li class="coal">Item 1</li>
+                <li class="coal">Item 2</li>
+                <li class="coal">Item 3</li>
             </ul>
-            <ul class='list-clear align-left font-text font-md l-height-50 item-75 snow align-center'>
-                <li class='list-inline coal'>List (Inline)</li>
-                <li class='list-inline coal'>Inline 2</li>
-                <li class='list-inline coal'>Inline 3</li>
+            <ul class='list-inline align-left font-text l-height-25 item-75 snow align-center'>
+                <li class="coal">Item 1</li>
+                <li class="coal">Item 2</li>
+                <li class="coal">Item 3</li>
             </ul>
-            <p>For the default list, don't use any class. Styles are: list-clear, list-inline (apply to list item)</p>
-            <p class='font-md'>To style a list:</p>
-            <h2>class='list-TYPE'</h2>
-            <h4>class='list-inline'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>list-clear</li>
+                <li class='code pad-10p scroll-hidden'>list-inline</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -361,10 +435,18 @@
                 <li class='item-50 bg-grass snow font-md align-center margin-top-10p'>Top</li>
                 <li class='item-50 bg-grass snow font-md align-center margin-bottom-10p'>Bottom</li>
             </ul>
-            <p>Margins exist in all directions in the following formats: 0, 10px (10p), 5%, 10%, 20%, 25%, 50%, 75%, 100%</p>
-            <p class='font-md'>To set the margins of an element:</p>
-            <h2>class='margin-DIRECTION-NUMBER'</h2>
-            <h4>class='margin-top-50'</h4>
+            <p>*Don't specify a direction in order to apply to all sides. Otherwise use (left/right/top/bottom)</p>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>margin-0</li>
+                <li class='code pad-10p scroll-hidden'>margin-5</li>
+                <li class='code pad-10p scroll-hidden'>margin-10</li>
+                <li class='code pad-10p scroll-hidden'>margin-10p</li>
+                <li class='code pad-10p scroll-hidden'>margin-20</li>
+                <li class='code pad-10p scroll-hidden'>margin-25</li>
+                <li class='code pad-10p scroll-hidden'>margin-50</li>
+                <li class='code pad-10p scroll-hidden'>margin-75</li>
+                <li class='code pad-10p scroll-hidden'>margin-100</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -377,10 +459,14 @@
             <p class='o-hidden bg-water snow pad-10p item-10 height-50'>Here is a lot of content to demonstrate how each style affects the DOM element.</p>
             <p class='o-auto bg-water snow pad-10p tem-10 height-50'>Here is a lot of content to demonstrate how each style affects the DOM element.</p>
             <p class='o-x bg-water snow pad-10p item-10'>Here is a lot of content to demonstrate how each style affects the DOM element.</p> 
-            <p>Overflow styles exist in the following: scroll, hidden, auto, x</p>
-            <p class='font-md'>To add an overflow style:</p>
-            <h2>class='o-name'</h2>
-            <h4>class='o-x'</h4>
+            <p class='o-x bg-water snow pad-10p item-10 scroll-hidden'>Here is a lot of content to demonstrate how each style affects the DOM element.</p> 
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>o-scroll</li>
+                <li class='code pad-10p scroll-hidden'>o-hidden</li>
+                <li class='code pad-10p scroll-hidden'>o-auto</li>
+                <li class='code pad-10p scroll-hidden'>o-x</li>
+                <li class='code pad-10p scroll-hidden'>scroll-hidden</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -396,10 +482,20 @@
                 <li class='item-50 bg-fire snow font-md align-center pad-top-10p margin-10p'>Top</li>
                 <li class='item-50 bg-fire snow font-md align-center pad-bottom-10p margin-10p'>Bottom</li>
             </ul>
-            <p>Padding exists in all directions in the following formats: 0, 10px (10p), 20px (20p), 50px (50p) 5%, 10%, 20%, 25%, 50%, 75%, 100%</p>
-            <p class='font-md'>To set the padding of an element:</p>
-            <h2>class='pad-DIRECTION-NUMBER'</h2>
-            <h4>class='pad-top-50'</h4>
+            <p>*Don't specify a direction in order to apply to all sides. Otherwise use (left/right/top/bottom)</p>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>margin-0</li>
+                <li class='code pad-10p scroll-hidden'>margin-5</li>
+                <li class='code pad-10p scroll-hidden'>margin-10</li>
+                <li class='code pad-10p scroll-hidden'>margin-10p</li>
+                <li class='code pad-10p scroll-hidden'>margin-20</li>
+                <li class='code pad-10p scroll-hidden'>margin-20p</li>
+                <li class='code pad-10p scroll-hidden'>margin-25</li>
+                <li class='code pad-10p scroll-hidden'>margin-50</li>
+                <li class='code pad-10p scroll-hidden'>margin-50p</li>
+                <li class='code pad-10p scroll-hidden'>margin-75</li>
+                <li class='code pad-10p scroll-hidden'>margin-100</li>
+            </ul>
         </div>
     
         <hr class='break'>
@@ -408,11 +504,15 @@
         <div class='margin-left-5 margin-right-5 align-left font-default ks-section' id='position'>
             <p class='font-lg font-header slate'>Position.</p>
             <p>Position places objects on the page.</p>
-            <p>Position styles exist in the following: relative, fixed</p>
-            <p class='font-md'>To add a position style:</p>
-            <h2>class='name'</h2>
-            <h4>class='relative'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>fixed</li>
+                <li class='code pad-10p scroll-hidden'>relative</li>
+                <li class='code pad-10p scroll-hidden'>absolute</li>
+                <li class='code pad-10p scroll-hidden'>center</li>
+            </ul>
         </div>
+
+        <hr class='break'>
 
         <!-- WIDTH-->
         <div class='margin-left-5 margin-right-5 align-left font-default ks-section' id='width'>
@@ -427,33 +527,38 @@
                 <li class='item-75 bg-rock snow font-md align-center margin-top-10p'>75%</li>
                 <li class='item-100 bg-rock snow font-md align-center margin-top-10p'>100%</li>
             </ul>
-            <p class='font-md'>To set the width of an element:</p>
-            <h2>class='item-NUMBER'</h2>
-            <h4>class='item-50'</h4>
+            <ul class='list-clear f-none list-inline o-x pad-top-20p align-left scroll-hidden'>
+                <li class='code pad-10p scroll-hidden'>item-auto</li>
+                <li class='code pad-10p scroll-hidden'>item-10</li>
+                <li class='code pad-10p scroll-hidden'>item-20</li>
+                <li class='code pad-10p scroll-hidden'>item-25</li>
+                <li class='code pad-10p scroll-hidden'>item-50</li>
+                <li class='code pad-10p scroll-hidden'>item-75</li>
+                <li class='code pad-10p scroll-hidden'>item-100</li>
+            </ul>
         </div>
-        <hr class='break'>
 </div>
 
 
 <!-- FOOTER -->
-<div class=' align-center snow bg-trans'>    
-    <ul class='pad-0'>
-        <li class='list-inline'>
+<div class=' align-center snow bg-trans'>   
+    <ul class='list-inline'>
+        <li class='pad-50p'>
             <a href='https://www.linkedin.com/in/juri-kiin/' class='link-clear snow'>
                 <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
             </a>
         </li>
-        <li class='list-inline fa-lg'>
+        <li class='fa-lg pad-50p'>
             <a href='https://twitter.com/JuriKiin' class='link-clear snow'>
                 <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
         </li>
-        <li class='list-inline fa-lg'>
+        <li class='fa-lg pad-50p'>
             <a href='https://www.instagram.com/juri_kiin/' class='link-clear snow'>
                 <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
         </li>
-        <li class='list-inline fa-lg'>
+        <li class='fa-lg pad-50p'>
             <a href='https://www.facebook.com/juri.kiin' class='link-clear snow'>
                 <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>

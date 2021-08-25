@@ -1,8 +1,8 @@
 /*
     - KIINSTYLE CSS FRAMEWORK
     - AUTHOR: JURI KIIN
-    - CONTACT: me@jurikiin.com
-    - LAST UPDATED: 5/30/2019
+    - CONTACT: support@jurikiin.com
+    - LAST UPDATED: 8/24/2021
 */
 
 /* IMPORTING FONTS */
@@ -87,11 +87,11 @@ html{
     margin: 0;
     padding: 0
 }
-.list-inline{
-    display: inline;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.list-inline {
+    white-space: nowrap;
+}
+.list-inline > li {
+    display: inline-block;
 }
 /* ------------ List Items (item-#) ------------*/
 .item-100{
@@ -326,6 +326,14 @@ html{
 .pad-right-50p{
     padding-right:50px;
 }
+.pad-v-50p{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pad-h-50p{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 /* 5% */
 .pad-5{
@@ -343,6 +351,14 @@ html{
 .pad-right-5{
     padding-right:5%;
 }
+.pad-v-5{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.pad-h-5{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 /* 10% */
 .pad-10{
     padding:10%;
@@ -358,6 +374,14 @@ html{
 }
 .pad-right-10{
     padding-right:10%;
+}
+.pad-v-10{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.pad-h-10{
+    padding-left: 10%;
+    padding-right: 10%;
 }
 /* 20% */
 .pad-20{
@@ -375,6 +399,14 @@ html{
 .pad-right-20{
     padding-right:20%;
 }
+.pad-v-20{
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.pad-h-20{
+    padding-left: 20%;
+    padding-right: 20%;
+}
 /* 25% */
 .pad-25{
     padding:25%;
@@ -390,6 +422,14 @@ html{
 }
 .pad-right-25{
     padding-right:25%;
+}
+.pad-v-25{
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+.pad-h-25{
+    padding-left: 25%;
+    padding-right: 25%;
 }
 /* 50% */
 .pad-50{
@@ -407,6 +447,14 @@ html{
 .pad-right-50{
     padding-right:50%;
 }
+.pad-v-50{
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+.pad-h-50{
+    padding-left: 50%;
+    padding-right: 50%;
+}
 /* 75% */
 .pad-75{
     padding:75%;
@@ -423,6 +471,14 @@ html{
 .pad-right-75{
     padding-right:75%;
 }
+.pad-v-75{
+    padding-top: 75%;
+    padding-bottom: 75%;
+}
+.pad-h-75{
+    padding-left: 75%;
+    padding-right: 75%;
+}
 /* 100% */
 .pad-100{
     padding:100%;
@@ -438,6 +494,14 @@ html{
 }
 .pad-right-100{
     padding-right:100%;
+}
+.pad-v-100{
+    padding-top: 100%;
+    padding-bottom: 100%;
+}
+.pad-h-100{
+    padding-left: 100%;
+    padding-right: 100%;
 }
 /* ------------ Font Size (font-sz)------------*/
 .font-xxl{
@@ -614,6 +678,10 @@ html{
 .f-right{
     float:right;
 }
+.f-none {
+    float: none;
+    clear: both;
+}
 /* ----------- Links ------------*/
 [class*='link'] {
     cursor: pointer;
@@ -655,6 +723,14 @@ html{
 }
 .o-x{
     overflow-x: scroll;
+}
+.scroll-hidden {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.scroll-hidden::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 /* ----------- Position ------------*/
@@ -701,9 +777,11 @@ html{
 
 /* ------------ Code (For displaying code) ------------*/
 .code{
-    background-color: #d9dce0;
+    background-color: #303030;
+    color: white;
     white-space: nowrap;
     overflow-x: scroll;
+    font-family: monospace;
 }
 
 /* ------------ Absolute Spacing (direction-) ------------*/
@@ -712,6 +790,9 @@ html{
 }
 .left-5{
     left:5%;
+}
+.left-10p {
+    left: 10px;
 }
 .left-10{
     left:10%;
@@ -728,19 +809,22 @@ html{
 .right-0{
     right:0;
 }
-.right-0{
+.right-5{
     right:5%;
 }
-.right-0{
+.right-10p {
+    right: 10px;
+}
+.right-10{
     right:10%;
 }
-.right-0{
+.right-20{
     right:20%;
 }
-.right-0{
+.right-25{
     right:25%;
 }
-.right-0{
+.right-50{
     right:50%;
 }
 .top-0{
@@ -751,6 +835,9 @@ html{
 }
 .top-10{
     top:10%;
+}
+.top-10p {
+    top: 10px;
 }
 .top-20{
     top:20%;
@@ -763,6 +850,9 @@ html{
 }
 .bottom-0{
     bottom:0;
+}
+.bottom-10p {
+    bottom: 10px;
 }
 .bottom-5{
     bottom:5%;
@@ -1139,7 +1229,6 @@ html{
         padding: 0
     }
     .m-list-inline{
-        display: inline !important;
         text-align: center !important;
         padding: 14px 16px !important;
         text-decoration: none !important;
@@ -1329,6 +1418,14 @@ html{
     .m-pad-0{
         padding:0 !important;
     }
+    .pad-v-0{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .pad-h-0{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     /* (MOBILE) 10px */
     .m-pad-10p{
         padding:10px !important;
@@ -1344,6 +1441,14 @@ html{
     }
     .m-pad-right-10p{
         padding-right:10px !important;
+    }
+    .m-pad-v-10p{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .m-pad-h-10p{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
     /* (MOBILE) 20px */
     .m-pad-20p{
@@ -1361,6 +1466,14 @@ html{
     .m-pad-right-20p{
         padding-right:20px !important;
     }
+    .m-pad-v-20p{
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .m-pad-h-20p{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
     /* (MOBILE) 50px */
     .m-pad-50p{
         padding:50px !important;
@@ -1377,7 +1490,14 @@ html{
     .m-pad-right-50p{
         padding-right:50px !important;
     }
-
+    .m-pad-v-50p{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .m-pad-h-50p{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
     /* (MOBILE) 5% */
     .m-pad-5{
         padding:5% !important;
@@ -1393,6 +1513,14 @@ html{
     }
     .m-pad-right-5{
         padding-right:5% !important;
+    }
+    .m-pad-v-5{
+        padding-top: 5% !important;
+        padding-bottom: 5% !important;
+    }
+    .m-pad-h-5{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
     }
     /* (MOBILE) 10% */
     .m-pad-10{
@@ -1410,6 +1538,14 @@ html{
     .m-pad-right-10{
         padding-right:10% !important;
     }
+    .m-pad-v-10{
+        padding-top: 10% !important;
+        padding-bottom: 10% !important;
+    }
+    .m-pad-h-10{
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
     /* (MOBILE) 20% */
     .m-pad-20{
         padding:20% !important;
@@ -1425,6 +1561,14 @@ html{
     }
     .m-pad-right-20{
         padding-right:20% !important;
+    }
+    .m-pad-v-20{
+        padding-top: 20% !important;
+        padding-bottom: 20% !important;
+    }
+    .m-pad-h-20{
+        padding-left: 20% !important;
+        padding-right: 20% !important;
     }
     /* (MOBILE) 25% */
     .m-pad-25{
@@ -1442,6 +1586,14 @@ html{
     .m-pad-right-25{
         padding-right:25% !important;
     }
+    .m-pad-v-25{
+        padding-top: 25% !important;
+        padding-bottom: 25% !important;
+    }
+    .m-pad-h-25{
+        padding-left: 25% !important;
+        padding-right: 25% !important;
+    }
     /* (MOBILE) 50% */
     .m-pad-50{
         padding:50% !important;
@@ -1457,6 +1609,14 @@ html{
     }
     .m-pad-right-50{
         padding-right:50% !important;
+    }
+    .m-pad-v-50{
+        padding-top: 50% !important;
+        padding-bottom: 50% !important;
+    }
+    .m-pad-h-50{
+        padding-left: 50% !important;
+        padding-right: 50% !important;
     }
     /* (MOBILE) 75% */
     .m-pad-75{
@@ -1474,6 +1634,14 @@ html{
     .m-pad-right-75{
         padding-right:75% !important;
     }
+    .m-pad-v-75{
+        padding-top: 75% !important;
+        padding-bottom: 75% !important;
+    }
+    .m-pad-h-75{
+        padding-left: 75% !important;
+        padding-right: 75% !important;
+    }
     /* (MOBILE) 100% */
     .m-pad-100{
         padding:100% !important;
@@ -1489,6 +1657,14 @@ html{
     }
     .m-pad-right-100{
         padding-right:100% !important;
+    }
+    .m-pad-v-100{
+        padding-top: 100% !important;
+        padding-bottom: 100% !important;
+    }
+    .m-pad-h-100{
+        padding-left: 100% !important;
+        padding-right: 100% !important;
     }
     /* (MOBILE) ------------ Font Size (font-sz)------------*/
     .m-font-xxl{
