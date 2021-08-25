@@ -1,4 +1,4 @@
-let defaultOutput = '<!DOCTYPE html> \n <html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="author" content="KiinStyle">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<<link rel="stylesheet" href="https://jurikiin.com/KiinStyles/css/kiinStyle.css">\n<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n</head><body class="body-clear">';
+let defaultOutput = '<!DOCTYPE html> \n <html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="author" content="KiinStyle">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<<link rel="stylesheet" href="https://jurikiin.com/KiinStyle/css/kiinStyle.css">\n<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n</head><body class="body-clear">';
 let defaultTrailOutput = "\n</body></html>";
 let breadcrumbReference = "absolute item-100 bottom-0 body-clear pad-left-10p pad-right-10p bg-rock snow";
 
