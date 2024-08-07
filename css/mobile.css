@@ -39,6 +39,23 @@
     color:white !important;
 }
 
+/* -- Warm Color Scheme -- */
+.m-tan{
+    color: #EAE7DC !important;
+}
+.m-sand{
+    color: #D8C3A5 !important;
+}
+.m-stone{
+    color: #8E8D8A !important;
+}
+.m-coral{
+    color: #E98074 !important;
+}
+.m-ember{
+    color:#E85A4F !important;
+}
+
 /* ------------ Background Color (bg-colorName) ------------ */
 .m-bg-grass{
     background-color: #20c544 !important;
@@ -61,6 +78,24 @@
 .m-bg-snow{
     background-color:white !important;
 }
+
+/* -- Warm Color Scheme -- */
+.m-bg-tan{
+    background-color: #EAE7DC !important;
+}
+.m-bg-sand{
+    background-color: #D8C3A5 !important;
+}
+.m-bg-stone{
+    background-color: #8E8D8A !important;
+}
+.m-bg-coral{
+    background-color: #E98074 !important;
+}
+.m-bg-ember{
+    background-color:#E85A4F !important;
+}
+
 .m-bg-water-gradient{
     background: rgb(42,30,92) !important;
     background: linear-gradient(90deg, rgba(42,30,92,1) 40%, rgba(32,109,197,1) 100%) !important;
@@ -819,23 +854,30 @@
     grid-template-rows: auto !important;
     justify-content: center !important;
     justify-items: center !important;
-    grid-template-columns: 33.33% 33.33% 33.33% !important;
+    grid-template-columns: repeat(3, 1fr) !important;
 }
 .m-grid-4{
     display:grid !important;
-    grid-template-columns: 25% 25% 25% 25% !important;
+    grid-template-columns: repeat(4, 1fr) !important;
     grid-template-rows: auto !important;
     justify-content: center !important;
     justify-items: center !important;
 }
 .m-grid-5{
     display:grid !important;
-    grid-template-columns: 20% 20% 20% 20% 20% !important;
+    grid-template-columns: repeat(5, 1fr) !important;
     grid-template-rows: auto !important;
     justify-content: center !important;
     justify-items: center !important;
 }
-.m-grid-1 > *, .m-grid-2 > *, .m-grid-3 > *, .m-grid-4 > *, .m-grid-5 > *{
+.m-grid-7 {
+    display:grid !important;
+    grid-template-columns: repeat(7, 1fr) !important;
+    grid-template-rows: auto !important;
+    justify-content: center !important;
+    justify-items: center !important;
+}
+.m-grid-1 > *, .m-grid-2 > *, .m-grid-3 > *, .m-grid-4 > *, .m-grid-5 > *, .m-grid-7 > *{
     display: flex !important;
     justify-content: center !important;
     justify-items: center !important;

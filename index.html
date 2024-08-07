@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,124 +7,17 @@
     <title>KiinStyle | Home</title>
     <link rel="stylesheet" href="css/kiinStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/png" href="media/kiinStyle.png"/>
-    <!-- test -->
+    <link rel="shortcut icon" type="image/png" href="media/kiinStyle.png" />
 </head>
+
 <body class='body-clear snow bg-water-gradient'>
-    <div class='align-right l-height-100 m-l-height-50 pad-right-5'>
-        <h1 class=' margin-0 snow font-header align-left pad-left-5 margin-right-25 font-lg d-inline f-left link-hover-subtle'><a href='#' class='link-clear'><img src='media/kiinStyle.png' class='height-75 pad-20p'></a></h1>
-        <ul class='align-right list-clear'>
-            <li class=' list-inline font-header font-md link-hover-subtle'><a class='link-clear snow' href='documentation.html'>Documentation</a></li>
-        </ul>
-    </div><br>
+    <ks-include path="/components/headers/header.html"></ks-include>
+    <ks-include path="/home/about.html"></ks-include>
+    <ks-include path="/home/news.html"></ks-include>
+    <ks-include path="/components/footer.html"></ks-include>
 
-    <div class='margin-left-10 margin-right-10'>
-        <h1 class='font-header font-xl'>KiinStyle</h1>
-        <p class='font-text font-md item-50 m-item-100'>
-            KiinStyle is a rapid-prototyping, responsive CSS Framework used to skip all the chaos that is CSS.
-        </p>
-        <p class="font-header font-md">Quick Links</p>
-        <ul class="list-clear">
-            <li class='font-text pad-10p link'><a href="#news" class="snow">Update Log</a></li>
-            <li class='font-text underline pad-10p link'><a href="design.html" class="snow">Guide for responsive design</a></li>
-        </ul>
-        <h2 class='font-header font-md'>Link this framework:</h2>
-        <figure class='align-center body-clear code o-x l-height-50 m-l-height-25 scroll-hidden'>
-            <code>&lt;link rel="stylesheet" href="https://jurikiin.com/KiinStyle/css/kiinStyle.css"&gt;</code>
-        </figure>
-
-        <button class='font-header aling-left font-md button margin-top-5'><a href="documentation.html" class='link-clear snow'>Look at documentation</a></button>
-    </div>
-
-    <div class='margin-10 pad-20p bg-fire' id='news'>
-        <h1 class='font-header link font-lg'>Updates</h1>
-        <div>
-            <div>
-                <h1 class='font-text font-md'>August 24th, 2021 - Documentation Updates</h1>
-                <ul class='list-clear font-text'>
-                    <li>- Added documentation for border radius</li>
-                    <li>- Reformatted documentation to display all available style class names</li>
-                </ul>
-            </div>
-            <div>
-                <h1 class='font-text font-md'>May 30th, 2019 - Responsive Design!!!</h1>
-                <ul class='list-clear font-text'>
-                    <li>- Added Functionality for responsive design.</li>
-                </ul>
-                <p class="font-text font-md snow bold italic">Click <span class="link" onclick="OpenPage('design.html')">this</span> to read about how to structure your classes for responsive design.</p>
-            </div>
-            <div>
-                <h1 class='font-text font-md'>May 29th, 2019 - Big Update!</h1>
-                <ul class='list-clear font-text'>
-                    <li>- Added Search Functionality to the documentation.</li>
-                    <li>- Restructured content so documentation is in alphabetical order.</li>
-                    <li>- Updated Documentation with more Height Styles</li>
-                    <li>- Added Font Effect Support</li>
-                    <li>- Added Section Support</li>
-                    <li>- Added Background Image Support</li>
-                    <li>- Added Overflow Support</li>
-                    <li>- Added Position Support</li>
-                </ul>
-            </div>
-            <div>
-                <h1 class='font-text font-md'>May 9th, 2019 - Animation Fixes</h1>
-                <ul class='list-clear font-text'>
-                    <li>- Fixed issue where slide-u/d were reversed.</li>
-                </ul>
-            </div>
-            <div>
-                <h1 class='font-text font-md'>April 11th, 2019 - Updated Grid & Animation!</h1>
-                <ul class='list-clear font-text'>
-                    <li>- Re-created Grid to be more intuitive.</li>
-                    <li>- Added style & documentation for hover animations.</li>
-                </ul>
-            </div>
-            <div>
-                <h1 class='font-text font-md'>April 9th, 2019 - Border Support & Spring Cleaning</h1>
-                <ul class='list-clear font-text'>
-                    <li>- Added Documentation for border styles.</li>
-                    <li>- Removed deprecated classes.</li>
-                </ul>
-            </div>
-            <div>
-                <h1 class='font-text font-md'>April 8th, 2019 - Grid Support!</h1>
-                <ul class='list-clear font-text'>
-                    <li>- Added Styles for basic grid formats. (2x2, 3x3, 1xn)</li>
-                    <li>- Added Documentation for Grids.</li>
-                    <li>- Added News Section</li>
-                    <li>- Added Documentation for Lists</li>
-                    <li>- Extended styles for padding to include 50px</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <div class='footer bg-trans'>      
-        <ul class='list-inline'>
-            <li class='pad-50p'>
-                <a href='https://www.linkedin.com/in/juri-kiin/' class='link-clear snow'>
-                    <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class='fa-lg pad-50p'>
-                <a href='https://twitter.com/JuriKiin' class='link-clear snow'>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class='fa-lg pad-50p'>
-                <a href='https://www.instagram.com/juri_kiin/' class='link-clear snow'>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class='fa-lg pad-50p'>
-                <a href='https://www.facebook.com/juri.kiin' class='link-clear snow'>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-            </li>
-        </ul>
-        <span class='l-height-50 font-text'>Developed by Jüri Kiin</span>
-    </div>
-  <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://jurikiin.com/local-includes/local-includes.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

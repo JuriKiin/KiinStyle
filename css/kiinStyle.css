@@ -42,6 +42,23 @@ html{
     color:white;
 }
 
+/* -- Warm Color Scheme -- */
+.tan{
+    color: #EAE7DC;
+}
+.sand{
+    color: #D8C3A5;
+}
+.stone{
+    color: #8E8D8A;
+}
+.coral{
+    color: #E98074;
+}
+.ember{
+    color:#E85A4F;
+}
+
 /* ------------ Background Color (bg-colorName) ------------ */
 .bg-grass{
     background-color: #20c544;
@@ -64,6 +81,24 @@ html{
 .bg-snow{
     background-color:white;
 }
+
+/* -- Warm Color Scheme -- */
+.bg-tan{
+    background-color: #EAE7DC;
+}
+.bg-sand{
+    background-color: #D8C3A5;
+}
+.bg-stone{
+    background-color: #8E8D8A;
+}
+.bg-coral{
+    background-color: #E98074;
+}
+.bg-ember{
+    background-color:#E85A4F;
+}
+
 .bg-water-gradient{
     background: rgb(42,30,92);
     background: linear-gradient(90deg, rgba(42,30,92,1) 40%, rgba(32,109,197,1) 100%);
@@ -505,16 +540,16 @@ html{
 }
 /* ------------ Font Size (font-sz)------------*/
 .font-xxl{
-    font-size: 100px;
+    font-size: 64px;
 }
 .font-xl{
-    font-size:75px;
+    font-size: 48px;
 }
 .font-lg{
-    font-size: 50px;
+    font-size: 36px;
 }
 .font-md{
-    font-size: 25px;
+    font-size: 16px;
 }
 .font-sm{
     font-size: 12px;
@@ -934,30 +969,37 @@ html{
     grid-template-rows: auto;
     justify-content: center;
     justify-items: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
 }
 .grid-3{
     display: grid;
     grid-template-rows: auto;
     justify-content: center;
     justify-items: center;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: repeat(3, 1fr);
 }
 .grid-4{
     display:grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     justify-content: center;
     justify-items: center;
 }
 .grid-5{
     display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     justify-content: center;
     justify-items: center;
 }
-.grid-1 > *, .grid-2 > *, .grid-3 > *, .grid-4 > *, .grid-5 > *{
+.grid-7 {
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+}
+.grid-1 > *, .grid-2 > *, .grid-3 > *, .grid-4 > *, .grid-5 > *, .grid-7 > *{
     display: flex;
     justify-content: center;
     justify-items: center;
