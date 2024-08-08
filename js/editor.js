@@ -16,7 +16,7 @@ let controlValues = {
     paddingbottom: ['pad-bottom-0','pad-bottom-10p','pad-bottom-20p','pad-bottom-50p','pad-bottom-5','pad-bottom-10','pad-bottom-20','pad-bottom-25','pad-bottom-50','pad-bottom-75','pad-bottom-100'],
     paddingright: ['pad-right-0','pad-right-10p','pad-right-20p','pad-right-50p','pad-right-5','pad-right-10','pad-right-20','pad-right-25','pad-right-50','pad-right-75','pad-right-100'],
     textdecoration: ['bold','italic','ul','none'],
-    grid: ['grid-1','grid-2','grid-3','grid-4','grid-5',''],
+    grid: ['grid-1','grid-2','grid-3','grid-4','grid-5','grid-7',''],
     border: ['bor-none','bor-1','bor-2','bor-5'],
     bordertop: ['','bor-top-1','bor-top-2','bor-top-5'],
     borderleft: ['','bor-left-1','bor-left-2','bor-left-5'],

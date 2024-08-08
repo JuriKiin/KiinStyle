@@ -42,7 +42,7 @@ html{
     color:white;
 }
 
-/* -- Warm Color Scheme -- */
+/* -- Dune Color Scheme -- */
 .tan{
     color: #EAE7DC;
 }
@@ -57,6 +57,23 @@ html{
 }
 .ember{
     color:#E85A4F;
+}
+
+/* -- Midnight Color Scheme -- */
+.electric{
+    color: #FAED26;
+}
+.violet{
+    color: #46344E;
+}
+.davy{
+    color: #5A5560;
+}
+.taupe{
+    color: #9D8D8F;
+}
+.bark{
+    color:#9B786F;
 }
 
 /* ------------ Background Color (bg-colorName) ------------ */
@@ -82,7 +99,7 @@ html{
     background-color:white;
 }
 
-/* -- Warm Color Scheme -- */
+/* -- Dune Color Scheme -- */
 .bg-tan{
     background-color: #EAE7DC;
 }
@@ -97,6 +114,23 @@ html{
 }
 .bg-ember{
     background-color:#E85A4F;
+}
+
+/* -- Midnight Color Scheme -- */
+.bg-electric{
+    background-color: #FAED26;
+}
+.bg-violet{
+    background-color: #46344E;
+}
+.bg-davy{
+    background-color: #5A5560;
+}
+.bg-taupe{
+    background-color: #9D8D8F;
+}
+.bg-bark{
+    background-color:#9B786F;
 }
 
 .bg-water-gradient{
@@ -181,6 +215,14 @@ html{
 .margin-right-0{
     margin-right:0;
 }
+.margin-horizontal-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+.margin-vertical-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 /* 5% */
 .margin-5{
     margin:5%;
@@ -196,6 +238,14 @@ html{
 }
 .margin-right-5{
     margin-right:5%;
+}
+.margin-horizontal-5 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.margin-vertical-5 {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 /* 10% */
 .margin-10{
@@ -213,6 +263,14 @@ html{
 .margin-right-10{
     margin-right:10%;
 }
+.margin-horizontal-10 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.margin-vertical-10 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
 /* 20% */
 .margin-20{
     margin:20%;
@@ -228,6 +286,14 @@ html{
 }
 .margin-right-20{
     margin-right:20%;
+}
+.margin-horizontal-20 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.margin-vertical-20 {
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 /* 25% */
 .margin-25{
@@ -245,6 +311,14 @@ html{
 .margin-right-25{
     margin-right:25%;
 }
+.margin-horizontal-25 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.margin-vertical-25 {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
 /* 50% */
 .margin-50{
     margin:50%;
@@ -260,6 +334,14 @@ html{
 }
 .margin-right-50{
     margin-right:50%;
+}
+.margin-horizontal-50 {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+.margin-vertical-50 {
+    margin-top: 50%;
+    margin-bottom: 50%;
 }
 /* 75% */
 .margin-75{
@@ -277,6 +359,14 @@ html{
 .margin-right-75{
     margin-right:75%;
 }
+.margin-horizontal-75 {
+    margin-left: 75%;
+    margin-right: 75%;
+}
+.margin-vertical-75 {
+    margin-top: 75%;
+    margin-bottom: 75%;
+}
 /* 100% */
 .margin-100{
     margin:100%;
@@ -292,6 +382,14 @@ html{
 }
 .margin-right-100{
     margin-right:100%;
+}
+.margin-horizontal-100 {
+    margin-left: 100%;
+    margin-right: 100%;
+}
+.margin-vertical-100 {
+    margin-top: 100%;
+    margin-bottom: 100%;
 }
 /* 10px */
 .margin-10p{
@@ -309,9 +407,25 @@ html{
 .margin-right-10p{
     margin-right:10px;
 }
+.margin-horizontal-10p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.margin-vertical-10p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* ------------ PADDING (pad-(sides)-# ------------*/
 .pad-0{
     padding:0;
+}
+.pad-vertical-0{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.pad-horizontal-0{
+    padding-left: 0;
+    padding-right: 0;
 }
 /* 10px */
 .pad-10p{
@@ -329,6 +443,14 @@ html{
 .pad-right-10p{
     padding-right:10px;
 }
+.pad-horizontal-10p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pad-vertical-10p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 /* 20px */
 .pad-20p{
     padding:20px;
@@ -344,6 +466,14 @@ html{
 }
 .pad-right-20p{
     padding-right:20px;
+}
+.pad-horizontal-20p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pad-vertical-20p {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 /* 50px */
 .pad-50p{
@@ -361,13 +491,13 @@ html{
 .pad-right-50p{
     padding-right:50px;
 }
-.pad-v-50p{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.pad-h-50p{
+.pad-horizontal-50p {
     padding-left: 50px;
     padding-right: 50px;
+}
+.pad-vertical-50p {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* 5% */
@@ -386,13 +516,13 @@ html{
 .pad-right-5{
     padding-right:5%;
 }
-.pad-v-5{
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-.pad-h-5{
+.pad-horizontal-5 {
     padding-left: 5%;
     padding-right: 5%;
+}
+.pad-vertical-5 {
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 /* 10% */
 .pad-10{
@@ -410,11 +540,11 @@ html{
 .pad-right-10{
     padding-right:10%;
 }
-.pad-v-10{
+.pad-vertical-10{
     padding-top: 10%;
     padding-bottom: 10%;
 }
-.pad-h-10{
+.pad-horizontal-10{
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -434,11 +564,11 @@ html{
 .pad-right-20{
     padding-right:20%;
 }
-.pad-v-20{
+.pad-vertical-20{
     padding-top: 20%;
     padding-bottom: 20%;
 }
-.pad-h-20{
+.pad-horizontal-20{
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -458,11 +588,11 @@ html{
 .pad-right-25{
     padding-right:25%;
 }
-.pad-v-25{
+.pad-vertical-25{
     padding-top: 25%;
     padding-bottom: 25%;
 }
-.pad-h-25{
+.pad-horizontal-25{
     padding-left: 25%;
     padding-right: 25%;
 }
@@ -482,11 +612,11 @@ html{
 .pad-right-50{
     padding-right:50%;
 }
-.pad-v-50{
+.pad-vertical-50{
     padding-top: 50%;
     padding-bottom: 50%;
 }
-.pad-h-50{
+.pad-horizontal-50{
     padding-left: 50%;
     padding-right: 50%;
 }
@@ -506,11 +636,11 @@ html{
 .pad-right-75{
     padding-right:75%;
 }
-.pad-v-75{
+.pad-vertical-75{
     padding-top: 75%;
     padding-bottom: 75%;
 }
-.pad-h-75{
+.pad-horizontal-75{
     padding-left: 75%;
     padding-right: 75%;
 }
@@ -530,23 +660,23 @@ html{
 .pad-right-100{
     padding-right:100%;
 }
-.pad-v-100{
+.pad-vertical-100{
     padding-top: 100%;
     padding-bottom: 100%;
 }
-.pad-h-100{
+.pad-horizontal-100{
     padding-left: 100%;
     padding-right: 100%;
 }
 /* ------------ Font Size (font-sz)------------*/
 .font-xxl{
-    font-size: 64px;
-}
-.font-xl{
     font-size: 48px;
 }
-.font-lg{
+.font-xl{
     font-size: 36px;
+}
+.font-lg{
+    font-size: 24px;
 }
 .font-md{
     font-size: 16px;
@@ -812,11 +942,12 @@ html{
 
 /* ------------ Code (For displaying code) ------------*/
 .code{
-    background-color: #303030;
+    background-color: #373131;
     color: white;
     white-space: nowrap;
     overflow-x: scroll;
     font-family: monospace;
+    padding: 10px;
 }
 
 /* ------------ Absolute Spacing (direction-) ------------*/
@@ -943,13 +1074,13 @@ html{
 .bor-top-5{
     border-top: 5px solid black;
 }
-.bor-bot-1{
+.bor-bottom-1{
     border-bottom: 1px solid black;
 }
-.bor-bot-2{
+.bor-bottom-2{
     border-bottom: 2px solid black;
 }
-.bor-bot-5{
+.bor-bottom-5{
     border-bottom: 5px solid black;
 }
 .bor-none{
@@ -1006,47 +1137,47 @@ html{
 }
 /* ------------ Animation ------------ */
 .zoom, .shrink, .twist-r, .twist-l, .slide-r, .slide-l, .slide-u, .slide-d{
-    transition: .25s all ease-in-out;
+    transition: .15s all ease-in-out;
 }
 .zoom:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 .shrink:hover{
-    transform: scale(0.85);
+    transform: scale(0.95);
 }
 .twist-r:hover{
-    transform: rotateZ(25deg);
+    transform: rotateZ(5deg);
 }
 .twist-l:hover{
-    transform: rotateZ(-25deg);
+    transform: rotateZ(-5deg);
 }
 .slide-r:hover{
-    transform: translateX(10px);
+    transform: translateX(5px);
 }
 .slide-l:hover{
-    transform: translateX(-10px);
+    transform: translateX(-5px);
 }
 .slide-u:hover{
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 .slide-d:hover{
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
 .pulse:hover{
     animation: pulse 1s infinite;
 }
 @keyframes pulse {
     from { transform: scale(1); }
-    50% { transform: scale(0.85); }
+    50% { transform: scale(0.9); }
     to { transform: scale(1); }
 }
 .shake:hover{
     animation: shake 1s infinite;
 }
 @keyframes shake {
-    from { transform: rotateZ(-15deg); }
-    50% { transform: rotateZ(15deg); }
-    to { transform: rotateZ(-15deg); }
+    from { transform: rotateZ(-5deg); }
+    50% { transform: rotateZ(5deg); }
+    to { transform: rotateZ(-5deg); }
 }
 .spin-r:hover{
     animation: spin-r 1s;
@@ -1061,13 +1192,6 @@ html{
 @keyframes spin-l {
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
-}
-
-
-/* ------------ Sections (sect) ------------ */
-.sect {
-    height:100vh;
-    width:100%;
 }
 
 /* ------------ Background Images ------------ */
@@ -1174,24 +1298,6 @@ html{
 
 /* ------------ MEDIA QUERIES ------------ */
 @media screen and (max-width: 750px) {
-    .font-xxl{
-        font-size: 50px;
-    }
-    .font-xl{
-        font-size:40px;
-    }
-    .font-lg{
-        font-size: 25px;
-    }
-    .font-md{
-        font-size: 15px;
-    }
-    .button{
-        width:50%;
-        margin-left:25%;
-        margin-right:25%;
-    }
-
     /* ------------ Slideshow (body-name) ------------ */
     .ks-slide {
         background-size: cover;
@@ -1228,6 +1334,40 @@ html{
         color:white !important;
     }
 
+    /* -- Dune Color Scheme -- */
+    .m-tan{
+        color: #EAE7DC !important;
+    }
+    .m-sand{
+        color: #D8C3A5 !important;
+    }
+    .m-stone{
+        color: #8E8D8A !important;
+    }
+    .m-coral{
+        color: #E98074 !important;
+    }
+    .m-ember{
+        color:#E85A4F !important;
+    }
+
+    /* -- Midnight Color Scheme -- */
+    .m-electric{
+        color: #FAED26 !important;
+    }
+    .m-violet{
+        color: #46344E !important;
+    }
+    .m-davy{
+        color: #5A5560 !important;
+    }
+    .m-taupe{
+        color: #9D8D8F !important;
+    }
+    .m-bark{
+        color:#9B786F !important;
+    }
+
     /* (MOBILE) ------------ Background Color (bg-colorName) ------------ */
     .m-bg-grass{
         background-color: #20c544 !important;
@@ -1249,6 +1389,39 @@ html{
     }
     .m-bg-snow{
         background-color:white !important;
+    }
+    /* -- Dune Color Scheme -- */
+    .m-bg-tan{
+        background-color: #EAE7DC !important;
+    }
+    .m-bg-sand{
+        background-color: #D8C3A5 !important;
+    }
+    .m-bg-stone{
+        background-color: #8E8D8A !important;
+    }
+    .m-bg-coral{
+        background-color: #E98074 !important;
+    }
+    .m-bg-ember{
+        background-color:#E85A4F !important;
+    }
+
+    /* -- Midnight Color Scheme -- */
+    .m-bg-electric{
+        background-color: #FAED26 !important;
+    }
+    .m-bg-violet{
+        background-color: #46344E !important;
+    }
+    .m-bg-davy{
+        background-color: #5A5560 !important;
+    }
+    .m-bg-taupe{
+        background-color: #9D8D8F !important;
+    }
+    .m-bg-bark{
+        background-color:#9B786F !important;
     }
     .m-bg-water-gradient{
         background: rgb(42,30,92) !important;
@@ -1328,6 +1501,14 @@ html{
     .m-margin-right-0{
         margin-right:0 !important;
     }
+    .m-margin-horizontal-0 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .m-margin-vertical-0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
     /* (MOBILE) 5% */
     .m-margin-5{
         margin:5% !important;
@@ -1343,6 +1524,14 @@ html{
     }
     .m-margin-right-5{
         margin-right:5% !important;
+    }
+    .margin-horizontal-5 {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    .margin-vertical-5 {
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
     }
     /* (MOBILE) 10% */
     .m-margin-10{
@@ -1360,6 +1549,14 @@ html{
     .m-margin-right-10{
         margin-right:10% !important;
     }
+    .m-margin-horizontal-10 {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+    }
+    .m-margin-vertical-10 {
+        margin-top: 10% !important;
+        margin-bottom: 10% !important;
+    }
     /* (MOBILE) 20% */
     .m-margin-20{
         margin:20% !important;
@@ -1375,6 +1572,14 @@ html{
     }
     .m-margin-right-20{
         margin-right:20% !important;
+    }
+    .m-margin-horizontal-20 {
+        margin-left: 20% !important;
+        margin-right: 20% !important;
+    }
+    .m-margin-vertical-20 {
+        margin-top: 20% !important;
+        margin-bottom: 20% !important;
     }
     /* (MOBILE) 25% */
     .m-margin-25{
@@ -1392,6 +1597,14 @@ html{
     .m-margin-right-25{
         margin-right:25% !important;
     }
+    .m-margin-horizontal-25 {
+        margin-left: 25% !important;
+        margin-right: 25% !important;
+    }
+    .m-margin-vertical-25 {
+        margin-top: 25% !important;
+        margin-bottom: 25% !important;
+    }
     /* (MOBILE) 50% */
     .m-margin-50{
         margin:50% !important;
@@ -1407,6 +1620,14 @@ html{
     }
     .m-margin-right-50{
         margin-right:50% !important;
+    }
+    .m-margin-horizontal-50 {
+        margin-left: 50% !important;
+        margin-right: 50% !important;
+    }
+    .m-margin-vertical-50 {
+        margin-top: 50% !important;
+        margin-bottom: 50% !important;
     }
     /* (MOBILE) 75% */
     .m-margin-75{
@@ -1424,6 +1645,14 @@ html{
     .m-margin-right-75{
         margin-right:75% !important;
     }
+    .m-margin-horizontal-75 {
+        margin-left: 75% !important;
+        margin-right: 75% !important;
+    }
+    .m-margin-vertical-75 {
+        margin-top: 75% !important;
+        margin-bottom: 75% !important;
+    }
     /* (MOBILE) 100% */
     .m-margin-100{
         margin:100% !important;
@@ -1439,6 +1668,14 @@ html{
     }
     .m-margin-right-100{
         margin-right:100% !important;
+    }
+    .m-margin-horizontal-100 {
+        margin-left: 100% !important;
+        margin-right: 100% !important;
+    }
+    .m-margin-vertical-100 {
+        margin-top: 100% !important;
+        margin-bottom: 100% !important;
     }
     /* (MOBILE) 10px */
     .m-margin-10p{
@@ -1456,15 +1693,23 @@ html{
     .m-margin-right-10p{
         margin-right:10px !important;
     }
+    .m-margin-horizontal-10p {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .m-margin-vertical-10p {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
     /* (MOBILE) ------------ PADDING (pad-(sides)-# ------------*/
     .m-pad-0{
         padding:0 !important;
     }
-    .pad-v-0{
+    .pad-vertical-0{
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
-    .pad-h-0{
+    .pad-horizontal-0{
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
@@ -1484,11 +1729,11 @@ html{
     .m-pad-right-10p{
         padding-right:10px !important;
     }
-    .m-pad-v-10p{
+    .m-pad-vertical-10p{
         padding-top: 10px !important;
         padding-bottom: 10px !important;
     }
-    .m-pad-h-10p{
+    .m-pad-horizontal-10p{
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
@@ -1508,11 +1753,11 @@ html{
     .m-pad-right-20p{
         padding-right:20px !important;
     }
-    .m-pad-v-20p{
+    .m-pad-vertical-20p{
         padding-top: 20px !important;
         padding-bottom: 20px !important;
     }
-    .m-pad-h-20p{
+    .m-pad-horizontal-20p{
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
@@ -1532,11 +1777,11 @@ html{
     .m-pad-right-50p{
         padding-right:50px !important;
     }
-    .m-pad-v-50p{
+    .m-pad-vertical-50p{
         padding-top: 50px !important;
         padding-bottom: 50px !important;
     }
-    .m-pad-h-50p{
+    .m-pad-horizontal-50p{
         padding-left: 50px !important;
         padding-right: 50px !important;
     }
@@ -1556,11 +1801,11 @@ html{
     .m-pad-right-5{
         padding-right:5% !important;
     }
-    .m-pad-v-5{
+    .m-pad-vertical-5{
         padding-top: 5% !important;
         padding-bottom: 5% !important;
     }
-    .m-pad-h-5{
+    .m-pad-horizontal-5{
         padding-left: 5% !important;
         padding-right: 5% !important;
     }
@@ -1580,11 +1825,11 @@ html{
     .m-pad-right-10{
         padding-right:10% !important;
     }
-    .m-pad-v-10{
+    .m-pad-vertical-10{
         padding-top: 10% !important;
         padding-bottom: 10% !important;
     }
-    .m-pad-h-10{
+    .m-pad-horizontal-10{
         padding-left: 10% !important;
         padding-right: 10% !important;
     }
@@ -1604,11 +1849,11 @@ html{
     .m-pad-right-20{
         padding-right:20% !important;
     }
-    .m-pad-v-20{
+    .m-pad-vertical-20{
         padding-top: 20% !important;
         padding-bottom: 20% !important;
     }
-    .m-pad-h-20{
+    .m-pad-horizontal-20{
         padding-left: 20% !important;
         padding-right: 20% !important;
     }
@@ -1628,11 +1873,11 @@ html{
     .m-pad-right-25{
         padding-right:25% !important;
     }
-    .m-pad-v-25{
+    .m-pad-vertical-25{
         padding-top: 25% !important;
         padding-bottom: 25% !important;
     }
-    .m-pad-h-25{
+    .m-pad-horizontal-25{
         padding-left: 25% !important;
         padding-right: 25% !important;
     }
@@ -1652,11 +1897,11 @@ html{
     .m-pad-right-50{
         padding-right:50% !important;
     }
-    .m-pad-v-50{
+    .m-pad-vertical-50{
         padding-top: 50% !important;
         padding-bottom: 50% !important;
     }
-    .m-pad-h-50{
+    .m-pad-horizontal-50{
         padding-left: 50% !important;
         padding-right: 50% !important;
     }
@@ -1676,11 +1921,11 @@ html{
     .m-pad-right-75{
         padding-right:75% !important;
     }
-    .m-pad-v-75{
+    .m-pad-vertical-75{
         padding-top: 75% !important;
         padding-bottom: 75% !important;
     }
-    .m-pad-h-75{
+    .m-pad-horizontal-75{
         padding-left: 75% !important;
         padding-right: 75% !important;
     }
@@ -1700,26 +1945,26 @@ html{
     .m-pad-right-100{
         padding-right:100% !important;
     }
-    .m-pad-v-100{
+    .m-pad-vertical-100{
         padding-top: 100% !important;
         padding-bottom: 100% !important;
     }
-    .m-pad-h-100{
+    .m-pad-horizontal-100{
         padding-left: 100% !important;
         padding-right: 100% !important;
     }
     /* (MOBILE) ------------ Font Size (font-sz)------------*/
     .m-font-xxl{
-        font-size: 100px !important;
+        font-size: 48px !important;
     }
     .m-font-xl{
-        font-size:75px !important;
+        font-size: 36px !important;
     }
     .m-font-lg{
-        font-size: 50px !important;
+        font-size: 24px !important;
     }
     .m-font-md{
-        font-size: 25px !important;
+        font-size: 16px !important;
     }
     .m-font-sm{
         font-size: 12px !important;
@@ -2068,13 +2313,13 @@ html{
     .m-bor-top-5{
         border-top: 5px solid black !important;
     }
-    .m-bor-bot-1{
+    .m-bor-bottom-1{
         border-bottom: 1px solid black !important;
     }
-    .m-bor-bot-2{
+    .m-bor-bottom-2{
         border-bottom: 2px solid black !important;
     }
-    .m-bor-bot-5{
+    .m-bor-bottom-5{
         border-bottom: 5px solid black !important;
     }
 
@@ -2091,37 +2336,44 @@ html{
         grid-template-rows: auto !important;
         justify-content: center !important;
         justify-items: center !important;
-        grid-template-columns: 50% 50% !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
     .m-grid-3{
         display: grid !important;
         grid-template-rows: auto !important;
         justify-content: center !important;
         justify-items: center !important;
-        grid-template-columns: 33.33% 33.33% 33.33% !important;
+        grid-template-columns: repeat(3, 1fr) !important;
     }
     .m-grid-4{
         display:grid !important;
-        grid-template-columns: 25% 25% 25% 25% !important;
+        grid-template-columns: repeat(4, 1fr) !important;
         grid-template-rows: auto !important;
         justify-content: center !important;
         justify-items: center !important;
     }
     .m-grid-5{
         display:grid !important;
-        grid-template-columns: 20% 20% 20% 20% 20% !important;
+        grid-template-columns: repeat(5, 1fr) !important;
         grid-template-rows: auto !important;
         justify-content: center !important;
         justify-items: center !important;
     }
-    .m-grid-1 > *, .m-grid-2 > *, .m-grid-3 > *, .m-grid-4 > *, .m-grid-5 > *{
+    .m-grid-7 {
+        display:grid !important;
+        grid-template-columns: repeat(7, 1fr) !important;
+        grid-template-rows: auto !important;
+        justify-content: center !important;
+        justify-items: center !important;
+    }
+    .m-grid-1 > *, .m-grid-2 > *, .m-grid-3 > *, .m-grid-4 > *, .m-grid-5 > *, .m-grid-7 > *{
         display: flex !important;
         justify-content: center !important;
         justify-items: center !important;
     }
     /* (MOBILE) ------------ Animation ------------ */
     .m-zoom, .m-shrink, .m-twist-r, .m-twist-l, .m-slide-r, .m-slide-l, .m-slide-u, .m-slide-d{
-        transition: .25s all ease-in-out !important;
+        transition: .15s all ease-in-out !important;
     }
     .m-zoom:hover{
         transform: scale(1.15) !important;
@@ -2176,13 +2428,6 @@ html{
     @keyframes m-spin-l {
         from { transform: rotate(0deg) !important; }
         to { transform: rotate(-360deg) !important; }
-    }
-
-
-    /* (MOBILE) ------------ Sections (sect) ------------ */
-    .m-sect {
-        height:100vh !important;
-        width:100% !important;
     }
 
     /* (MOBILE) ------------ Background Images ------------ */

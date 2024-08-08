@@ -31,3 +31,7 @@ function Search() {
 function OpenPage(url) {
     window.open(url, "_blank");
 }
+
+function copyLink() {
+    navigator.clipboard.writeText('<link rel="stylesheet" href="https://jurikiin.com/KiinStyle/css/kiinStyle.css">')
+}
