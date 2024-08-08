@@ -16,14 +16,17 @@ function Search() {
     if(value == "") {
         for(var i = 0; i < idElements.length; i++) {
             idElements[i].classList.remove("d-none");
+            idElements[i].classList.remove("m-d-none");
         }
     };
     for(var i = 0; i < idElements.length; i++) {
         let name = idElements[i].id.toUpperCase();
         if(name.includes(value.toUpperCase())) {
             document.getElementsByClassName("ks-menuItem")[i].classList.remove("d-none");
+            document.getElementsByClassName("ks-menuItem")[i].classList.remove("m-d-none");
         } else {
             document.getElementsByClassName("ks-menuItem")[i].classList.add("d-none");
+            document.getElementsByClassName("ks-menuItem")[i].classList.add("m-d-none");
         }
     }
 }

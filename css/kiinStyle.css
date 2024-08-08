@@ -1441,12 +1441,13 @@ html{
     .m-list-clear{
         list-style-type: none !important;
         margin: 0 !important;
-        padding: 0
+        padding: 0;
     }
     .m-list-inline{
-        text-align: center !important;
-        padding: 14px 16px !important;
-        text-decoration: none !important;
+        white-space: nowrap;
+    }
+    .m-list-inline > li {
+        display: inline;
     }
     /* (MOBILE) ------------ List Items (item-#) ------------*/
     .m-item-100{
@@ -2121,6 +2122,10 @@ html{
     }
     .m-f-right{
         float:right !important;
+    }
+    .m-f-none{
+        float: none !important;
+        clear: both !important;
     }
     /* (MOBILE) ----------- Links ------------*/
     [class*='link'] {
