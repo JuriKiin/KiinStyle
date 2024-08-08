@@ -1,28 +1,31 @@
 <!-- Article -->
-<div class="margin-5">
-    <h1 class="font-lg font-header">Introducing... Responsive Design.</h1>
-    <p class="margin-left-5 font-text font-md l-height-50 m-l-height-25">Ever since the beginning of KiinStyle, the
-        main issue has been a lack of responsive design.<br>
-        Due to the nature of the framework, there hasn't been a way to design sites for mobile.<br>
-        This has been a major issue with KiinStyle, however with this update, it is changed.<br>
-        KiinStyle already decreases font sizes for smaller screens, but no other styles are effected.<br>
-        With the current process, the way to style elements exists as follows:<br>
-    <p class="code scroll-hidden pad-20p align-center">&lt;p class="font-lg pad-10p bg-sand snow height-75"&gt;This
-        is a test paragraph.&lt;/p&gt;</p>
-    <p class="font-lg pad-10p bg-sand snow height-75">This is a test paragraph.</p>
+<div class="margin-horizontal-10 bg-tan violet pad-20p">
+    <h1 class="font-xl font-header">Guide to Responsive Design.</h1>
+    <div class="font-text font-md l-height-25">
+        <p>Creating responsive design with KiinStyle is easy. <span class='bold'>Every class in the library exists with a mobile counterpart.</span></p>
+        <p>This means that if your design requires different styling on smaller screens, you can customize its appearance.</p>
+        <p>This is done by prefixing any style with <span class="code">m-</span>.</p>
 
-    <p class="margin-left-5 font-text font-md l-height-50 m-l-height-25">The issue here, is when you scale the
-        screen smaller, or view it on mobile, the height becomes too big for the platform.<br>
-        In order to solve this, KiinStyle is introducing the m- system.<br>
-        For any style that you want to style differently on mobile, simply add an additional class with m- in
-        front.<br>
-        In this example, we are changing the height value to smaller on mobile. (Adding m-height-20)</p>
-    <p class="code align-center pad-20p scroll-hidden">&lt;p class="font-lg pad-10p bg-sand snow height-75
-        m-height-20"&gt;This is a test paragraph.&lt;/p&gt;</p>
-    <p class="font-lg pad-10p bg-sand snow height-75 m-height-20">This is a test paragraph.</p>
+        <p>Take the below example. The following code creates the below element:</p>
+        <p class="code scroll-hidden">&lt;p class="font-lg pad-10p bg-sand snow height-75"&gt;This is a test paragraph.&lt;/p&gt;</p>
 
-    <p class="margin-left-5 font-text font-md l-height-50 m-l-height-25">You'll notice that this page decreases the
-        line height of paragraph tags when on smaller screens.</p>
-    <p class="margin-left-5 font-text font-md l-height-50 m-l-height-25">The m- system can be used on any style that
-        exists in the KiinStyle Framework. Enjoy!</p>
+        <p class="font-lg pad-10p bg-sand snow height-75">This is a test paragraph.</p>
+    
+        <p>On a desktop, this might look okay, however on a mobile device, the height of this element might take up too much space.</p>
+        <p>In order to fix this, we can make use of the <span class='code'>m-</span> prefix, and set a new height for smaller screens:</p>
+
+        <p>Taking the above example, let's lower the height to something more reasonable by using <span class='code'>m-height-20</span>.</p>
+        <p class="italic">The full HTML declaration now looks like this:</p>
+        <p class="code scroll-hidden">&lt;p class="font-lg pad-10p bg-sand snow height-75 m-height-20"&gt;This is a test paragraph.&lt;/p&gt;</p>
+
+        <p>You can see that we keep the same <span class='code'>height-75</span> that we want for wider screens, but now add the additional class <span class='code'>m-height-20</span>.</p>
+        <p>If you now look at the below UI element on a smaller screen, you'll notice that it takes on the smaller height, making it better.</p>
+
+        <p class="font-lg pad-10p bg-sand snow height-75 m-height-20">This is a test paragraph.</p>
+
+        <p class="italic">If you are looking at this page on a computer screen, the two elements likely look the same. This is because the <span class='code'>m-</span> prefix only applies on smaller screens.</p>
+    
+        <p class="bold">It's important to remember that the <span class='code'>m-</span> prefix can be applied to any style that you wish to change for smaller screens.</p>
+    </div>
+
 </div>

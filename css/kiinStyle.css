@@ -947,7 +947,7 @@ html{
     white-space: nowrap;
     overflow-x: scroll;
     font-family: monospace;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* ------------ Absolute Spacing (direction-) ------------*/
@@ -2201,7 +2201,6 @@ html{
     /* (MOBILE) ------------ Code (For displaying code) ------------*/
     .m-code{
         background-color: #d9dce0 !important;
-        line-height: 50px !important;
         white-space: nowrap !important;
         overflow-x: scroll;
     }
