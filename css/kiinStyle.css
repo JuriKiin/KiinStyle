@@ -76,6 +76,23 @@ html{
     color:#9B786F;
 }
 
+/* -- Millenial Color Scheme -- */
+.rose {
+    color: #EEAABB;
+}
+.lavender {
+    color: #DDE4F1;
+}
+.lace {
+    color: #FFF4E1;
+}
+.cotton {
+    color: #F6EDEC;
+}
+.verdigris {
+    color: #7EABAC;
+}
+
 /* ------------ Background Color (bg-colorName) ------------ */
 .bg-grass{
     background-color: #20c544;
@@ -131,6 +148,23 @@ html{
 }
 .bg-bark{
     background-color:#9B786F;
+}
+
+/* -- Millenial Color Scheme -- */
+.bg-rose {
+    background-color: #EEAABB;
+}
+.bg-lavender {
+    background-color: #DDE4F1;
+}
+.bg-lace {
+    background-color: #FFF4E1;
+}
+.bg-cotton {
+    background-color: #F6EDEC;
+}
+.bg-verdigris {
+    background-color: #7EABAC;
 }
 
 .bg-water-gradient{
@@ -1368,6 +1402,23 @@ html{
         color:#9B786F !important;
     }
 
+        /* -- Millenial Color Scheme -- */
+    .m-rose {
+        color: #EEAABB I !important;
+    }
+    .m-lavender {
+        color: #DDE4F1 !important;
+    }
+    .m-lace {
+        color: #FFF4E1 !important;
+    }
+    .m-cotton {
+        color: #F6EDEC !important;
+    }
+    .m-verdigris {
+        color: #7EABAC !important;
+    }
+
     /* (MOBILE) ------------ Background Color (bg-colorName) ------------ */
     .m-bg-grass{
         background-color: #20c544 !important;
@@ -1423,6 +1474,24 @@ html{
     .m-bg-bark{
         background-color:#9B786F !important;
     }
+
+        /* -- Millenial Color Scheme -- */
+    .m-bg-rose {
+        background-color: #EEAABB !important;
+    }
+    .m-bg-lavender {
+        background-color: #DDE4F1 !important;
+    }
+    .m-bg-lace {
+        background-color: #FFF4E1 !important;
+    }
+    .m-bg-cotton {
+        background-color: #F6EDEC !important;
+    }
+    .m-bg-verdigris {
+        background-color: #7EABAC !important;
+    }
+
     .m-bg-water-gradient{
         background: rgb(42,30,92) !important;
         background: linear-gradient(90deg, rgba(42,30,92,1) 40%, rgba(32,109,197,1) 100%) !important;
